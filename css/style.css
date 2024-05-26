@@ -1,0 +1,305 @@
+
+/* *************************  */
+/*          HEADER            */
+/* *************************  */
+
+.header {
+    margin-bottom: 8rem;
+}
+
+.header .nav-container .nav-logo {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+
+
+.header a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.main-nav-list span {
+    font-size: 1.8rem;
+}
+
+.header-welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-welcome h1 {
+    font-size: 6.2rem;
+}
+
+.header-welcome p {
+    color: white;
+    font-size: 2rem;
+}
+
+/* *************************  */
+/*  SECTION CONVENIENCE       */
+/* *************************  */
+
+.convenience-container {
+    width: 4rem;
+}
+
+.section-convenience {
+    margin-top: 6.4rem;
+    position: relative;
+    padding-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.section-convenience::before {
+    content: "Convenience";
+    position: absolute;
+    top: -2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(238, 171, 84);
+}
+
+.section-convenience-card1 {
+    margin-left: 6rem;
+}
+
+
+.section-convenience h2,
+.section-choose .row h2 {
+    font-size: 4.2rem;
+    color: rgb(255, 145, 0);
+    line-height: 1;
+}
+
+.convenience-sentence {
+    color: #555;
+    /* font-weight: 500; */
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+
+.section-convenience-card2 {
+    margin-left: 4rem;
+}
+
+/* *************************  */
+/*          WHY CHOOSE US     */
+/* *************************  */
+
+.section-choose {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-choose-text::before {
+    content: "Why Choose Us";
+    position: absolute;
+    top: 7rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(238, 171, 84);
+}
+
+.section-choose-title {
+    line-height: 2;
+}
+
+.section-choose-descrption {
+    font-size: 1.8rem;
+    color: #555;
+}
+
+.section-choose-list {
+    font-size: 1.6rem;
+    /* line-height: 1; */
+    color: #555;
+    font-weight: 500;
+}
+
+.section-choose-list ion-icon {
+    color: rgb(238, 171, 84);
+    font-size: 3rem;
+    /* font-weight: bold; */
+}
+
+/* *************************  */
+/*    SECTION SERVICES       */
+/* *************************  */
+.section-services {
+    width: 100wh;
+    margin-bottom: 10rem;
+}
+
+.services-title-container {
+    background-color: rgb(47, 47, 47);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    height: 9rem;
+}
+
+.cards-title-2,
+.cards-title-3,
+.cards-title-4 {
+    margin-left: 4rem;
+}
+
+.section-services p {
+    font-size: 3.6rem;
+    color: rgb(255, 145, 0);
+}
+
+.btn-section-services {
+    width: 20rem;
+    height: 4rem;
+    background-color: rgb(255, 145, 0);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4rem;
+    transition: all 0.3s;
+}
+
+.btn-section-services:hover {
+    background-color: rgba(255, 145, 0, 0.84);
+}
+
+/* *************************  */
+/*    SECTION CONTACT        */
+/* *************************  */
+
+.section-contact {
+    margin-top: 6.4rem;
+    margin-bottom: 8rem;
+    /* border: 1px solid black; */
+}
+
+.section-contact-container {
+    background-color: rgb(255, 132, 0);
+    height: 62rem;
+    width: 130rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section-contact-image {
+    width: 100%;
+    height: 65rem;
+    background-size: cover;
+    background-image: url("/Photos/photos2/Home-photos/Contact-us-photo.jpg");
+    background-position: center 40%;
+}
+
+.section-contact-form {
+    margin-left: 11.3rem;
+}
+
+.section-contact-title h2 {
+    font-size: 3.6rem;
+    color: #45260a;
+}
+
+.section-contact-title p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #45260a;
+}
+
+.form-group input,
+.form-group select {
+    height: 4rem;
+}
+
+.form-group input::placeholder,
+.form-group input,
+.form-group select {
+    font-size: 1.7rem;
+}
+
+
+.contact-message-container label {
+    font-size: 1.7rem;
+    color: white;
+}
+
+#contact-message {
+    height: 10rem;
+    font-size: 1.7rem;
+}
+
+.section-contact-form button {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    background-color: #45260a;
+    transition: all 0.3s;
+}
+
+.section-contact-form button:hover {
+    background-color: #45260ae9;
+}
+
+/* *************************  */
+/*    SECTION CONTACT        */
+/* *************************  */
+
+.footer {
+    /* background-color: rgb(255, 132, 0); */
+    margin-top: 8rem;
+}
+
+.footer h2 {
+    font-size: 3rem;
+}
+
+.footer h3 {
+    font-size: 2.2rem;
+    color: rgb(255, 132, 0);
+    /* color: white; */
+    font-weight: 500;
+}
+
+.footer a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s;
+    width: ;
+}
+
+.footer a:hover {
+    color: rgb(255, 132, 0);
+    font-weight: 600;
+}
+
+.footer p {
+    font-size: 1.5rem;
+}
+
+.footer-logos i {
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+
+.footer-logos a:hover {
+    color: rgb(255, 132, 0);
+}
+
+.footer-about-btn {
+    color: rgb(255, 132, 0);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
