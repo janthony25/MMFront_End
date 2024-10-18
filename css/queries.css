@@ -1,0 +1,1299 @@
+/* *************************  */
+/*          BELOW 1399px           */
+/* *************************  */
+
+@media (max-width: 87.4375em) {
+    /* *************************  */
+    /*          INDEX HTML        */
+    /* *************************  */
+
+    .section-choose img {
+        width: 44rem;
+        height: 47rem;
+    }
+
+    .section-choose-text {
+        padding-right: 2rem !important;
+    }
+
+    .section-choose-text::before {
+        top: 9.5rem
+    }
+
+    .section-choose-title {
+        font-size: 3.7rem !important;
+    }
+
+    .section-choose-list-affordable::before {
+        font-size: 1.24rem;
+        left: 58%;
+    }
+
+    .section-convenience h2 {
+        font-size: 3.7rem;
+    }
+    .section-choose .row h2 {
+        font-size: 3.86rem;
+    }
+
+    .convenience-sentence {
+        font-size: 1.8rem;
+    }
+
+    .section-choose-descrption {
+        font-size: 1.8rem;
+    }
+
+    .services-cards {
+        height: 29rem;
+        width: 28rem;
+    }
+
+    .cards-title-2,
+    .cards-title-3,
+    .cards-title-4 {
+    margin-left: 2rem;
+}
+
+    /* *************************  */
+    /*          ABOUT HTML        */
+    /* *************************  */
+
+    
+
+    /* *************************  */
+    /*       SERVICES HTML        */
+    /* *************************  */
+
+    .accordion .contentBx .label {
+        width: 50rem;
+    }
+
+    .service-image-container {
+        /* max-height: 90rem; */
+        max-width: 40rem;
+        border-radius: 20px;
+        object-fit: cover;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+    }
+    
+    .image {
+        width: 40rem;
+        height: 28rem;
+        position: relative;
+        object-fit: cover;
+        display: block;
+    }
+    
+    
+    .image-content a {
+        width: 12rem;
+        height: 3.5rem;
+        font-size: 1.6rem;
+        color: black;
+        font-weight: 500;
+        margin-top: 1.8rem;
+    }
+
+    .accordion  p {
+        width: 50rem;
+    }
+
+}
+
+
+/* *************************  */
+/*          BELOW 1199px      */
+/* *************************  */
+
+@media (max-width: 74.9375em) {
+
+    /* *************************  */
+    /*         INDEX HTML         */
+    /* *************************  */
+
+    /* .section-convenience .row {
+        width: 105rem;
+        margin-left: -5.5rem;
+    } */
+
+    .header {
+        height: 60vh;
+        min-height: 400px;
+    }
+
+    .header-welcome {
+        width: 90%;
+    }
+    
+
+    .header-welcome h1 {
+        font-size: 5rem;
+        white-space: nowrap;
+    }
+    
+    .header-welcome p {
+        font-size: 2rem;
+        text-wrap:wrap;
+        /* white-space: nowrap; */
+        width: 100% !important;
+    }
+    
+
+    .convenience-title-container {
+        max-width: 35rem !important;
+    }
+
+    .convenience-sentence {
+        width: 100% !important;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        height: 15rem !important;
+        /* max-height: 1rem !important; */
+        /* white-space: nowrap; */
+    }
+
+    .section-convenience-card1 {
+        margin-left: 3rem;
+    }
+
+    .section-convenience {
+        width: 90% !important;
+    }
+    
+    .section-convenience h2 {
+        font-size: 3.1rem;
+    }
+
+    .container {
+       max-width: 100% !important;
+        /* margin: 0 !important; */
+    }
+
+    .section-choose {
+        /* margin-left: 0 0 0 0 !important; */
+        /* max-width: 100rem !important; */
+        width: 100rem  !important;
+    }
+
+    .section-choose-img-container {
+        width: 37rem !important;
+        padding-left: 4rem !important;
+    }
+
+    .section-choose img {
+        width: 35rem;
+        height: 40rem;
+    }
+
+    .section-choose-title {
+        font-size: 3.1rem !important;
+    }
+
+    .section-choose .row h2 {
+        font-size: 3.2rem;
+    }
+
+    .section-choose-descrption {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .convenience-title-container h2::before {
+        top: -1% !important;
+        left: 0.6rem;
+    }
+
+    .section-convenience-card ion-icon {
+        font-size: 4rem;
+    }
+
+    .section-convenience-card-title {
+        font-size: 1.8rem;
+    }
+
+    .section-convenience-card-description {
+        font-size: 1.4rem;
+    }
+
+    .section-choose {
+        width: 90% !important;
+    }
+
+    .section-choose .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-choose-text {
+        margin-left: 2rem;
+        width: 48rem !important;
+    }
+
+    .section-choose-text::before {
+        top: 8.8rem
+    }
+
+    .section-choose-list-affordable::before {
+        font-size: 1.14rem;
+        left: 62%;
+    }
+
+    .section-choose-list ion-icon {
+        font-size: 2.5rem;
+    }
+
+    .section-choose-list {
+        font-size: 1.4rem;
+    }
+
+    .services-cards {
+        height: 30rem;
+        width: 25rem;
+    }
+
+    .services-cards i {
+        font-size: 4rem;
+    }
+
+    .section-contact-container {
+        height: 62rem;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .section-contact-title h2 {
+        margin-top: 1rem;
+        font-size: 3rem;
+        color: #45260a;
+    }
+    
+    .section-contact-title p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #45260a;
+    }
+
+    /* *************************  */
+    /*         ABOUT HTML         */
+    /* *************************  */
+    
+    
+
+    .about-header-welcome h1 {
+        font-size: 5rem;
+    }
+
+    .about-us-section-title {
+        font-size: 3.4rem;
+    }
+
+    
+
+    .about-story p,
+    .about-why-us p {
+        font-size: 1.8rem;
+    }
+
+    .about-commitment {
+        box-shadow: none;
+    }
+
+    .about-commitment:hover {
+        box-shadow: none;
+    }
+
+    .about-commitment-paragraph {
+        font-size: 1.8rem;
+        width: 90rem;
+    }
+
+    .about-commitment-cards {
+        margin-bottom: 4.8rem;
+    }
+
+    .about-commitment-card {
+        width: 18rem !important;
+    }
+
+    .about-commitment-card span {
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+
+    .about-commitment-card p {
+        font-size: 1.6rem;
+    }
+
+    /* *************************  */
+    /*       SERVICES HTML        */
+    /* *************************  */
+
+    .section-servicing {
+        width: 90% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .servicing-title {
+        width: 99.5%;
+    }
+
+    .services-header-welcome h1{
+        font-size: 5rem;
+    }
+
+    .services-header-welcome p {
+        font-size: 2.2rem;
+    }
+
+    .accordion {
+        margin-left: 0.8rem;
+    }
+
+    .accordion .contentBx {
+        width: 42rem;
+    }
+
+    .accordion .contentBx .label {
+        width: 42rem;
+        font-size: 2.2rem;
+        margin-left: 2rem;
+    }
+
+
+    .service-image-container {
+        /* max-height: 90rem; */
+        max-width: 35rem !important;
+        margin-left: 1rem;
+    }
+    
+    .image {
+        width: 35rem;
+        height: 25rem;
+        position: relative;
+        object-fit: cover;
+        display: block;
+    }
+    
+    
+    .image-content a {
+        width: 12rem;
+        height: 3.5rem;
+        font-size: 1.6rem;
+        color: black;
+        font-weight: 500;
+        margin-top: 1.8rem;
+    }
+
+    .accordion  p {
+        width: 42.5rem;
+        font-size: 1.8rem;
+        margin-left: 2rem;
+    }
+
+    .service-row {
+        height: 43rem;
+    }
+
+     /* *************************  */
+    /*       CONTACT HTML        */
+    /* *************************  */
+
+    .about-header-welcome h1 {
+        font-size: 5rem;
+    }
+
+    .about-header-welcome p {
+        font-size: 2.1rem;
+
+    }
+}
+
+
+
+/* *************************  */
+/*          BELOW 991px      */
+/* *************************  */
+
+@media (max-width: 61.9375em) {
+    
+/* *************************  */
+/*        MOBILE NAVIGATION   */
+/* *************************  */
+
+.btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    right: 4rem;
+}
+
+.main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s ease-in;
+
+    /* HIDE NAVIGATION */
+    /* 1. HIDE THE ELEMENT VISUALLY */
+    opacity: 0;
+    /* 2. MAKE IT UNACCESSIBLE TO MOUSE AND KEYBOARD */
+    pointer-events: none;
+
+    /* 3. HIDE FROM SCREEN READERS */
+    visibility: hidden;
+    
+}
+
+/* CODE TO BE ADDED BY JS */
+.nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    overflow: hidden;
+}
+
+.nav-open .btn-mobile-nav .close-outline {
+    display: block;
+    font-size: 3.2rem;
+}
+
+.nav-open .btn-mobile-nav .menu-outline {
+    display: none;
+}
+
+/* Disable scrolling */
+.no-scroll {
+    overflow: hidden;
+}
+
+.main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+}
+
+.main-nav-list a{
+    color: black;
+    margin-left: 0 !important;
+    font-size: 3rem;
+}
+
+.main-nav-list span {
+    font-size: 3rem;
+}
+
+    /* *************************  */
+    /*         INDEX HTML         */
+    /* *************************  */
+
+.container{
+    /* margin: 1rem 5rem 2rem 5rem !important; */
+   /* margin-left: 0; */
+    width: 96% !important;
+}
+
+
+.header {
+    height: 50vh;
+    min-height: 400px;
+}
+
+.header-welcome {
+    width: 90%;
+}
+
+.header-welcome h1 {
+    font-size: 4rem;
+    white-space: nowrap;
+    /* width: 90% !important; */
+}
+
+.header-welcome p {
+    font-size: 1.8rem;
+    text-wrap:wrap;
+    /* white-space: nowrap; */
+    width: 100% !important;
+}
+
+/* .convenience-title-container {
+    width: 29rem !important;
+}
+
+.convenience-cards-container {
+    max-width: 55rem !important;
+} */
+
+.convenience-sentence {
+    width: 100% !important;
+    font-size: 1.5rem !important;
+    /* word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; */
+}
+
+.section-convenience {
+    margin: 6.4rem 2.4rem 2rem 2rem !important;
+}
+
+.section-choose-title{
+    margin-left: -3.2rem;
+}
+
+.convenience-title-container h2,
+.section-choose-title {
+    font-size: 2.6rem !important;
+}
+
+
+
+.section-convenience-card {
+    padding: 1rem;
+    height: 25rem;
+}
+
+.section-convenience-card1 {
+    margin-left: 2rem;
+}
+
+.section-convenience-card2 {
+    margin-left: 1rem;
+}
+
+.section-choose-img-container {
+    width: 32% !important;
+    padding-left: 2rem !important;
+}
+
+.section-choose-img-container img {
+    width: 40rem ;
+    height: 30rem;
+}
+
+.section-choose-title::before {
+    top: -1.8rem;
+    left: -0.1rem;
+    align-self: flex-start;
+    
+    /* margin-left: 4.3rem; */
+}
+
+.section-choose-list-affordable::before {
+    font-size: 1.14rem;
+    left: 25.2rem;
+}
+
+
+.section-choose-text {
+    width: 60% !important;
+    margin-left: 2rem;
+    padding: 0 !important;
+    align-items: center;
+}
+
+.section-choose-list li:nth-child(2) {
+    width: 25rem !important;
+}
+
+.section-choose-text p {
+    font-size: 1.6rem;
+}
+
+.section-choose-descrption {
+    /* height: 11rem; */
+    width: 40.4rem;
+}
+
+.section-choose .row h2 {
+    font-size: 2.4rem;
+}
+
+.section-choose-list ion-icon {
+    font-size: 2rem;
+}
+
+.section-choose-list {
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+.services-cards {
+    height: 28rem;
+}
+
+.services-cards i {
+    font-size: 3.4rem;
+    height: 5rem;
+}
+
+.services-cards-description {
+    font-size: 1.4rem;
+}
+
+
+.services-title-container {
+    height: 8rem;
+}
+
+.section-services p {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.section-contact-form {
+    margin-left: 8%;
+}
+
+    /* *************************  */
+    /*       ABOUT HTML        */
+    /* *************************  */
+
+.about-story,
+.about-why-us {
+    margin-left: 5rem !important;
+}
+
+.about-story p, 
+.about-why-us p {
+    width: 90%;
+    font-size: 1.6rem;
+}
+
+.about-commitment-title h2 {
+    font-size: 3.4rem;
+}
+
+.about-commitment-paragraph {
+    font-size: 1.6rem;
+}
+
+.about-commitment-cards {
+    margin: 0 0 4.8rem 0;
+    width: 98%;
+}
+
+.about-commitment-card {
+    margin-left: 1rem;
+}
+
+.about-commitment-card span {
+    font-size: 1.8rem;
+}
+
+.about-commitment-card p {
+    font-size: 1.4rem;
+}
+
+    /* *************************  */
+    /*       SERVICES HTML        */
+    /* *************************  */
+
+    .service-image-container {
+        display: none;
+      }
+
+      .section-servicing {
+        width: 90% !important;
+      }
+
+      .accordion .contentBx .label {
+        margin-left: 0;
+      }
+
+      .accordion p {
+        width: 41rem;
+        margin-left: 0;
+    }
+
+     /* *************************  */
+    /*       CONTACT HTML        */
+    /* *************************  */
+
+.form-container {
+    width: 90% !important;
+}
+
+.about-header-welcome {
+    width: 90%;
+}
+
+.about-header-welcome p {
+    white-space: wrap;
+}
+
+}
+
+
+     /* *************************  */
+     /*       BELOW 768px           */
+     /* *************************  */
+
+@media (max-width: 48em) {
+
+    /* *************************  */
+    /*         INDEX HTML         */
+    /* *************************  */
+
+.container {
+    width: 90% !important;
+}
+
+.header-welcome h1 {
+    white-space: wrap;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.remove-on-small-screens {
+    display: none;
+  }
+
+.convenience-title-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.convenience-title-container h2::before {
+    top: -3.5% !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.convenience-sentence {
+    text-align: center;
+    height: 10rem !important;
+}
+
+.convenience-cards-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 3.2rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-convenience-card:hover {
+    transform: none;
+}
+
+.section-choose-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-choose-title {
+    text-align: center;
+    position: relative;
+}
+
+.section-choose-title::before {
+    position: absolute;
+    top: -1.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* margin-left: 4.3rem; */
+}
+
+.section-choose-descrption {
+    width: 90%;
+    text-align: center;
+}
+
+.services-title-container {
+    height: 6rem;
+}
+
+.small-card-container {
+    position: relative;
+}
+
+.services-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-around;
+}
+
+.services-cards {
+    flex: 0 0 50%; /* Prevents growth and shrink, ensures each item takes 50% width */
+    max-width: 45%; /* Ensures each card does not exceed 50% of the container width */
+    box-sizing: border-box; /* Includes padding and borders in the width */
+    padding: 10px; /* Optional: Adds some padding around the cards for spacing */
+}
+
+.cards-title-3 {
+    margin-left: 0;
+}
+
+.services-cards:hover {
+    transform: scale(1);
+}
+
+.services-cards-title {
+    font-size: 1.9rem;
+}
+
+.section-contact-image {
+    margin-left: -6.5rem;
+}
+
+.section-contact-form {
+    margin-top: -7rem !important;
+}
+
+.section-contact-title {
+    width: 110%;
+    margin-left: -1.3rem;
+}
+
+.section-contact-title h2 {
+    font-size: 3rem;
+}
+
+.section-contact-title p {
+    font-size: 1.6rem;
+    /* width: 40rem; */
+}
+
+.footer h2 {
+    font-size: 2.4rem;
+}
+
+ /* *************************  */
+    /*       ABOUT HTML        */
+    /* *************************  */
+
+.about-header-welcome {
+    width: 90% !important;
+}
+
+.about-header-welcome h1 {
+    font-size: 4rem;
+}
+
+.about-header-welcome p {
+    font-size: 1.8rem;
+    width: 100% !important;
+    white-space: wrap;
+}
+
+.about-commitment-paragraph-container {
+    margin-bottom: 4.8rem;
+}
+
+.about-commitment-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-around;
+}
+
+.about-commitment-card {
+    flex: 0 0 50%; /* Prevents growth and shrink, ensures each item takes 50% width */
+    max-width: 45%; /* Ensures each card does not exceed 50% of the container width */
+    box-sizing: border-box; /* Includes padding and borders in the width */
+    padding: 10px; /* Optional: Adds some padding around the cards for spacing */
+}
+
+.btn-book-service {
+    width: 24rem;
+}
+
+.about-commitment {
+    margin-bottom: 12rem;
+}
+
+ /* *************************  */
+    /*       SERVICES HTML        */
+    /* *************************  */
+
+.services-header-welcome h1 {
+   font-size: 4rem;
+}
+
+.services-header-welcome p {
+    font-size: 1.8rem;
+}
+
+.service-row .col-6 {
+    margin-left: -45rem;
+}
+
+ /* *************************  */
+    /*       CONTACT HTML        */
+    /* *************************  */
+
+.book-a-mekaniko h2 {
+    font-size: 3.6rem;
+}
+
+}
+
+    /* *************************  */
+    /*       BELOW 556px          */
+    /* *************************  */
+
+@media (max-width: 34.75em) {
+
+.container.d-flex.justify-content-between.align-items-center.pt-5.nav-container {
+    padding-top: 1rem !important;
+}
+
+.header .nav-container .nav-logo {
+    font-size: 2rem;
+}
+
+.icon-mobile-nav {
+    font-size: 3.5rem;
+}
+
+.header {
+    height: 42vh;
+    min-height: 300px;
+}
+
+.convenience-sentence,
+.section-convenience-card-description,
+.services-cards-description,
+.about-commitment-card p,
+.header-welcome p,
+.about-header-welcome p,
+.services-header-welcome p,
+.accordion p  {
+    font-size: 1.6rem !important;
+}
+
+
+     /* *************************  */
+    /*       HOME HTML        */
+    /* *************************  */
+
+.header-welcome h1,
+.about-header-welcome h1,
+.services-header-welcome h1 {
+    font-size: 3rem;
+}
+
+.convenience-title-container h2::before {
+    top: -2.8% !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.convenience-cards-container {
+    flex-direction: column; /* Stacks flex items (cards) vertically */
+    align-items: center; /* Centers the cards horizontally if necessary */
+}
+
+.section-convenience-card {
+    width: 85%; /* Ensures each card takes the full width of the container */
+    align-items: center;
+}    
+
+.section-convenience-card-description {
+    text-align: center;
+}
+
+.section-convenience-card2 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.section-choose-text {
+    padding: 1rem !important;
+}
+
+.section-choose-title {
+    /* white-space: wrap; */
+    width: 90%;
+    /* text-align: start; */
+}
+
+.section-choose-list {
+    width: 90%;
+    padding-left: 5%;
+}
+
+.section-choose-list-affordable::before {
+    font-size: 1rem;
+    left: 27.2rem;
+}
+
+.services-cards {
+    flex: 1 100%; /* Prevents growth and shrink, ensures each item takes 50% width */
+    max-width: 80%; /* Ensures each card does not exceed 50% of the container width */
+    box-sizing: border-box; /* Includes padding and borders in the width */
+    padding: 10px; /* Optional: Adds some padding around the cards for spacing */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards-title-2,
+.cards-title-4 {
+    margin-left: 0 !important;
+}
+
+.services-cards-description {
+    text-align: center;
+}
+
+.section-contact-form.col-6{
+    width: 80% !important;
+}    
+
+
+.section-contact-form {
+    margin-left: 0;
+}
+
+     /* *************************  */
+    /*       ABOUT HTML        */
+    /* *************************  */
+
+.about-us-section-title {
+    font-size: 2.6rem;
+}
+
+.about-commitment-title {
+    height: 6rem;
+}
+
+.about-commitment-title h2,
+.servicing-title h2,
+.book-a-mekaniko h2 {
+    font-size: 3rem;
+}
+
+.about-commitment-paragraph-container {
+    width: 98% !important;
+}
+
+.about-commitment-card-container {
+    flex-direction: column; 
+    width: 100%;
+}
+
+.about-commitment-card {
+    max-width: 100%;
+    width: 100% !important;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-commitment-card span {
+    font-size: 1.9rem;
+}
+
+
+
+.about-commitment {
+    margin-bottom: 40rem;
+}
+
+.btn-book-service {
+    font-size: 1.8rem;
+    width: 24rem;
+    height: 4rem;
+}
+    
+     /* *************************  */
+    /*       SERVICES HTML        */
+    /* *************************  */
+
+.accordion {
+    margin-left: 1.2rem;
+}
+
+.accordion .contentBx .label {
+    font-size: 2rem;
+}
+
+.accordion .contentBx .label {
+    width: 40rem;
+}
+
+  /* *************************  */
+    /*       Footer HTML        */
+    /* *************************  */
+    .footer .container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* Two equal columns */
+        grid-template-rows: auto auto !important; /* Two rows */
+        gap: 1rem !important; /* Optional: adjust the gap between items */
+    }
+
+    .footer .col-3 {
+        flex: none !important; /* Reset flex properties */
+        max-width: 100% !important; /* Ensure full width in grid items */
+        width: 90% !important; /* Make the columns take 90% of the width */
+        margin: 0 auto !important; /* Center align the columns */
+    }
+
+    /* Place the items in the correct grid cells */
+    .footer .col-3:nth-child(1) { /* Mobile Mekaniko (Logo) */
+        grid-column: 1 / 2 !important; /* First column */
+        grid-row: 1 / 2 !important; /* First row */
+    }
+
+    .footer .col-3:nth-child(4) { /* About */
+        grid-column: 2 / 3 !important; /* Second column */
+        grid-row: 1 / 2 !important; /* First row */
+    }
+
+    .footer .col-3:nth-child(2) { /* Services */
+        grid-column: 1 / 2 !important; /* First column */
+        grid-row: 2 / 3 !important; /* Second row */
+    }
+
+    .footer .col-3:nth-child(3) { /* Location */
+        grid-column: 2 / 3 !important; /* Second column */
+        grid-row: 2 / 3 !important; /* Second row */
+    }
+
+    #year {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+      }
+}
+       
+     /* *************************  */
+    /*        BELOW 457px      */
+    /* *************************  */
+
+@media (max-width: 28.5625em) {
+    /* GENERAL */
+
+h1 {
+    font-size: 2.4rem !important;
+}
+
+h2,
+.convenience-title-container h2, 
+.section-choose-title {
+    font-size: 2.2rem !important;
+}
+
+.convenience-title-container h2::before,
+.section-choose-title::before {
+    font-size: 1.4rem;
+    top: -1.7rem !important;
+}
+
+     /* *************************  */
+    /*        HOME HTML       */
+    /* *************************  */
+
+
+
+.convenience-cards-container {
+    margin-top: 6rem !important;
+}
+
+.section-choose-list {
+    width: 100%;
+    padding-left: 10%;
+}
+
+.section-convenience-card {
+    width: 90%;
+}
+
+.section-choose-list {
+    margin-top: 1.8rem;
+}
+
+ /* *************************  */
+    /*        ABOUT HTML       */
+    /* *************************  */
+
+.about-commitment-card {
+    margin-left: 0;
+}
+
+.about-commitment {
+    margin-bottom: 45rem;
+}
+
+.about-commitment-cards {
+    margin-bottom: 3rem;
+}
+
+     /* *************************  */
+    /*        SERVICES HTML       */
+    /* *************************  */
+
+.accordion{
+    width: 100%;
+    margin-left: 5rem;
+}
+
+.accordion .contentBx .label {
+    width: 80% ;
+    font-size: 1.8rem;
+}
+
+.accordion p {
+    width: 60% !important;
+    margin-left: 0;
+}
+
+.section-servicing {
+    width: 90% !important;
+    height: 45rem;
+}
+}
+
+    /* *************************  */
+    /*        BELOW 384px       */
+    /* *************************  */
+
+@media (max-width: 24em) {
+
+.accordion .contentBx .label {
+    width: 65%;
+}
+
+.accordion{
+    margin-left: 9rem;
+}
+
+.accordion p {
+    width: 50% !important;
+}
+}
+
+
+/* Font Sizes */
+/* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* Spacning System */
+/* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 */

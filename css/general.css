@@ -20,7 +20,7 @@
 
 html {
     font-size: 62.5%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 
@@ -29,29 +29,27 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+    /* ONLY WORKS IF THERE IS NOTHING ABSOLUTELY
+    POSITIONED IN RELATION TO BODY */
     overflow-x: hidden;
-    height: 300rem;
+    /* height: 300rem; */
 }
 
-header {
-    height: 80vh;
-    min-height: 400px;
-    background-size: cover;
-    background-image: url("/Photos/Mechanic1.jpg");
-    background-position: center 20%;
-    position: relative;
-    z-index: 1;
+.main-nav-link {
+    transition: all 0.3s;
 }
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.56); /* Adjust the opacity as needed */
-    z-index: -1;
+
+.main-nav-link:hover,
+.main-nav-link.active {
+    color: rgb(231, 150, 45);
 }
+
+.main-nav-list a.num {
+    font-size: 1.8rem;
+    color: rgb(231, 150, 45);
+}
+
+
 
 .section-convenience-card {
     padding-left: 2rem;
@@ -77,7 +75,6 @@ header::before {
 
 .section-convenience-card-title {
     color: rgb(255, 145, 0);
-    
     font-size: 2rem;
 }
 
@@ -108,6 +105,7 @@ header::before {
 .services-cards:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.09);
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 
@@ -125,4 +123,216 @@ header::before {
 .services-cards-description {
     font-size: 1.6rem;
     color: #555;
+}
+
+
+/* *************************  */
+/*    SERVICING PAGE           */
+/* *************************  */
+
+.section-servicing {
+    margin-bottom: 8rem;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.09);
+    transition: all 0.3s;
+}
+
+.section-servicing:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.servicing-title {
+    background-color: rgb(255, 132, 0);
+    color: white;
+    border-radius: 5px;
+    height: 5rem;
+    padding: 3rem 0 3rem 0;
+}
+
+.servicing-title h2{
+    font-size: 3.6rem;
+}
+
+.service-row {
+    height: 50rem;
+}
+
+/* Image Container  */
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* ORIGINAL IMG CONTAINER AND IMAGE SIZE */
+/* .service-image-container img{ */
+    /* max-height: 90rem; */
+    /* max-width: 45rem;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+} */
+
+.service-image-container {
+    /* max-height: 90rem; */
+    max-width: 45rem;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.image {
+    width: 45rem;
+    height: 30rem;
+    position: relative;
+    object-fit: cover;
+    display: block;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* object-fit: cover; */
+    display: block;
+}
+
+.image-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.image:hover .image-content{
+    opacity: 1;
+}
+
+.image-content a {
+    width: 12rem;
+    height: 3.5rem;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 500;
+    margin-top: 1.8rem;
+}
+
+
+
+
+/* .img-content {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.img-content:hover {
+    opacity: 1;
+} */
+
+.accordion {
+    /* max-width: rem; */
+    height: 32rem;
+    /* background-color: rgba(244, 244, 244, 0.793); */
+    padding: 10px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    font-size: 2.4rem;
+    width: 60rem;
+    color: rgb(255, 132, 0);
+    transition: all 0.3s;
+}
+
+.accordion .contentBx .label:hover {
+    color: #45260ae9;
+}
+
+.accordion .contentBx .label::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-60%);
+    font-size: 3rem;
+    transition: transform 0.3s;
+}
+
+.accordion .contentBx.active .label {
+    color: #555;
+    border-top: 2px solid rgb(238, 171, 84);
+}
+
+.accordion .contentBx.active .label::before {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    font-size: 2rem;
+    width: 55rem;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: #555;
+}
+
+.accordion .contentBx.active .content {
+    height: auto;
+    padding-top: 1rem;
+}
+
+
+/* *************************  */
+/*    ABOUT US PAGE           */
+/* *************************  */
+
+.about-us-section-title {
+    color: rgb(255, 132, 0);
+    font-size: 4rem;
+    font-weight: bold;
+    /* padding-left: 22.4rem; */
+}
+
+.why-us-bullets span{
+    color: rgb(237, 158, 55);
+    font-weight: 500;
+}
+
+.about-commitment-card {
+    width: 100rem;
+}
+
+.about-commitment-card span {
+    color: rgb(237, 158, 55);
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+
+.about-commitment-card p {
+    font-size: 1.8rem;
 }

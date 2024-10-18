@@ -4,13 +4,56 @@
 /* *************************  */
 
 .header {
+    height: 78vh;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url("/Photos/Mechanic1.jpg");
+    background-position: center 20%;
+    position: relative;
+    z-index: 1;
     margin-bottom: 8rem;
 }
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.669); /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
 
 .header .nav-container .nav-logo {
     font-size: 2.4rem;
-    font-weight: 600;
+    /* font-size: 3rem; */
+    font-weight: 700;
 }
+
+.header .nav-container .nav-logo span {
+    color: rgb(231, 150, 45);
+}
+
+/*--------------- MOBILE NAV--------------- */
+.btn-mobile-nav {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav {
+   font-size: 4rem;
+   color: rgb(231, 150, 45);
+   font-weight: bold;
+}
+
+.btn-mobile-nav .close-outline {
+    display: none;
+}
+
 
 
 
@@ -20,24 +63,35 @@
     color: white;
 }
 
-.main-nav-list span {
-    font-size: 1.8rem;
+.main-nav-list {
+    font-weight: bold;
 }
+
+
 
 .header-welcome {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 90%;
 }
 
+
 .header-welcome h1 {
-    font-size: 6.2rem;
+    /* font-size: 6.2rem; */
+    font-size: 7rem;
+    color: rgb(231, 150, 45);
+    white-space: nowrap;
+    /* z-index: 4; */
 }
 
 .header-welcome p {
     color: white;
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    width: 100%;
+    /* white-space: nowrap; */
 }
 
 /* *************************  */
@@ -55,10 +109,10 @@
     margin-bottom: 2rem;
 }
 
-.section-convenience::before {
+.convenience-title-container h2::before {
     content: "Convenience";
     position: absolute;
-    top: -2rem;
+    top: -1.6rem;
     font-size: 1.6rem;
     font-weight: bold;
     color: rgb(238, 171, 84);
@@ -68,18 +122,44 @@
     margin-left: 6rem;
 }
 
+.section-convenience h2 {
+    white-space: nowrap;
+}
+
+.section-choose {
+    margin-top: 8rem !important;
+    margin-bottom: 8rem !important;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    box-shadow: 0 15px 15px rgba(12, 11, 10, 0.155);
+    /* border-left: 5px solid rgb(255, 132, 0); */
+}
+
+
+
 
 .section-convenience h2,
 .section-choose .row h2 {
     font-size: 4.2rem;
-    color: rgb(255, 145, 0);
+    /* color: rgb(255, 145, 0); */
+    color: rgb(255, 132, 0);
     line-height: 1;
 }
+
+
+
+.section-choose img {
+    width: 45rem;
+    height: 50rem;
+    border-radius: 10px;
+    /* object-fit: cover; */
+}
+
 
 .convenience-sentence {
     color: #555;
     /* font-weight: 500; */
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-top: 3rem;
 }
 
@@ -98,10 +178,10 @@
     position: relative;
 }
 
-.section-choose-text::before {
+.section-choose-title::before {
     content: "Why Choose Us";
     position: absolute;
-    top: 7rem;
+    top: -1.5rem;
     font-size: 1.6rem;
     font-weight: bold;
     color: rgb(238, 171, 84);
@@ -109,15 +189,19 @@
 
 .section-choose-title {
     line-height: 2;
+    position: relative;
 }
 
 .section-choose-descrption {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #555;
+    margin-top: 2rem;
+
 }
 
 .section-choose-list {
     font-size: 1.6rem;
+    position: relative;
     /* line-height: 1; */
     color: #555;
     font-weight: 500;
@@ -127,6 +211,15 @@
     color: rgb(238, 171, 84);
     font-size: 3rem;
     /* font-weight: bold; */
+}
+
+.section-choose-list-affordable::before {
+    content: "LOWEST PRICE";
+    font-size: 1.25rem;
+    color: rgb(255, 145, 0);
+    font-weight: bold;
+    position: absolute;
+    left: 49%;
 }
 
 /* *************************  */
@@ -253,7 +346,7 @@
 }
 
 /* *************************  */
-/*    SECTION CONTACT        */
+/*    SECTION FOOTER        */
 /* *************************  */
 
 .footer {
@@ -277,7 +370,7 @@
     text-decoration: none;
     color: #555;
     transition: all 0.3s;
-    width: ;
+    /* width: ; */
 }
 
 .footer a:hover {
@@ -302,4 +395,356 @@
     color: rgb(255, 132, 0);
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+
+
+/* *************************  */
+/*    SERVICES PAGE        */
+/* *************************  */
+
+.header-services {
+    height: 50vh !important;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url("/Photos/Mechanic1.jpg");
+    background-position: center 30%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 8rem;
+}
+.header-services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.669); /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+.header-services .nav-container .nav-logo {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.header-services .nav-container .nav-logo span {
+    color: rgb(231, 150, 45);
+}
+
+.services-header-welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.services-header-welcome h1 {
+    /* font-size: 6.2rem; */
+    font-size: 7rem;
+    color: rgb(231, 150, 45);
+    white-space: nowrap;
+    /* z-index: 4; */
+}
+
+.services-header-welcome p {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 500;
+    /* white-space: nowrap; */
+    width: 100% !important;
+}
+
+
+
+.header-services a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+/* *************************  */
+/*    ABOUT-US PAGE        */
+/* *************************  */
+
+.header-about {
+    height: 40vh !important;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url("/Photos/Mechanic1.jpg");
+    background-position: center 30%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 8rem;
+}
+.header-about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.669); /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+.header-about .nav-container .nav-logo {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.header-about .nav-container .nav-logo span {
+    color: rgb(231, 150, 45);
+}
+
+.about-header-welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.about-header-welcome h1 {
+    font-size: 6.2rem;
+    color: rgb(231, 150, 45);
+}
+
+.about-header-welcome p {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+
+.header-about a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.about-why-us {
+    margin-bottom: 8rem;
+}
+
+.about-story p,
+.about-why-us p {
+    font-size: 2rem;
+    color: #555;
+    width: 85rem;
+}
+
+.about-commitment {
+    /* width: 150rem; */
+    height: 58rem;
+    margin-bottom: 8rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.09);
+    transition: all 0.3s;
+}
+
+.about-commitment:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.about-commitment-title {
+    background-color: rgb(255, 132, 0);
+    color: white;
+    border-radius: 5px;
+    height: 5rem;
+    padding: 3rem 0 3rem 0;
+}
+
+.about-commitment-title h2{
+    font-size: 3.6rem;
+}
+
+.about-commitment-paragraph-container {
+    margin-bottom: 6.4rem;
+}
+
+
+
+.about-commitment-paragraph {
+    width: 100rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #3c3c3c;
+}
+
+.about-commitment-cards {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    position: relative;
+    margin-bottom: 6.4rem;
+}
+
+.about-commitment-card {
+    width: 28rem;
+}
+
+.btn-book-service {
+    background-color: rgb(255, 132, 0);
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    width: 30rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* *************************  */
+/*    CONTACT PAGE        */
+/* *************************  */
+
+.header-contact {
+    height: 37vh !important;
+    /* min-height: 400px; */
+    background-size: cover;
+    background-image: url("/Photos/Mechanic1.jpg");
+    background-position: center 30%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 8rem;
+}
+.header-contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.669); /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+.header-contact .nav-container .nav-logo {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.header-contact .nav-container .nav-logo span {
+    color: rgb(231, 150, 45);
+}
+
+.header-contact a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.book-a-mekaniko {
+    border-top: 4px solid rgba(254, 159, 35, 0.568);
+    /* border-bottom: 4px solid rgba(254, 159, 35, 0.568); */
+    /* border: 2px solid rgba(254, 159, 35, 0.568); */
+    /* box-shadow: 0 5px 10px 1px rgba(254, 159, 35, 0.409); */
+    /* border-radius: 20px; */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 8rem;
+    transition: all 0.3s;
+}
+
+/* .book-a-mekaniko:hover {
+        box-shadow: 0 5px 8px 1px rgba(254, 159, 35, 0.25);
+    border: none;
+    border-radius: 20px;
+} */
+
+.book-a-mekaniko h2 {
+    font-size: 4rem;
+    color: rgb(255, 132, 0);
+    font-weight: bold;
+}
+
+.contact-details {
+    margin-bottom: 6.6rem;
+}
+
+.contact-details p {
+    font-size: 1.6rem;
+    margin-bottom: -0.5rem;
+    color: rgb(254, 159, 35);
+    font-weight: 500;
+}
+
+.form-container {
+    width: 80rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.09);
+}
+
+.form-group label {
+    font-size: 1.7rem;
+}
+
+.book-a-mekaniko button {
+    background-color: rgb(237, 163, 66);
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.remove-on-small-screens {
+    display: inline;
+  }
+
+  /* *************************  */
+  /*    CONTACT PAGE        */
+  /* *************************  */
+
+.services-cards-small-device {
+    /* width: 90%; */
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.small-card-container {
+    position: relative;
+    width: 27rem;
+    height: 25rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.small-card-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.669); /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+.small-card img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.small-card-container h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    z-index: 2;
 }

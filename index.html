@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,48 +17,72 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "51bF3QGUtyBBVKaWc",
+        });
+      })();
+    </script>
   </head>
   <body>
     <header class="header">
-      <div class="nav-container container d-flex justify-content-between pt-5">
-        <a href="#" class="nav-logo"
-          ><span class="text-warning">MOBILE</span> MEKANIKO</a
+      <div
+        class="nav-container container d-flex justify-content-between align-items-center pt-5"
+      >
+        <a href="/index.html" class="nav-logo"
+          ><span class="">MOBILE</span> MEKANIKO</a
         >
         <nav class="main-nav">
-          <ul class="main-nav-list d-flex justify-content-between">
-            <li><a href="" class="main-nav-link">HOME</a></li>
-            <li><a href="" class="main-nav-link ms-4">ABOUT US</a></li>
-            <li><a href="" class="main-nav-link ms-4">SERVICES</a></li>
-            <li><a href="" class="main-nav-link ms-4">CONTACT</a></li>
-            <span class="text-warning ms-4">(+64) 22 026 0611</span>
+          <ul
+            class="main-nav-list d-flex justify-content-between align-items-center"
+          >
+            <li><a href="/index.html" class="main-nav-link">HOME</a></li>
+            <li>
+              <a href="/about.html" class="main-nav-link ms-4">ABOUT US</a>
+            </li>
+            <li>
+              <a href="/services.html" class="main-nav-link ms-4">SERVICES</a>
+            </li>
+            <li>
+              <a href="/contact.html" class="main-nav-link ms-4">CONTACT</a>
+            </li>
+            <a href="tel:+64220260611" class="num ms-4">(+64) 22 026 0611</a>
           </ul>
         </nav>
+        <!----------- MOBILE NAVIGATION ------------>
+        <button class="btn-mobile-nav">
+          <i class="bi bi-list icon-mobile-nav menu-outline"></i>
+          <i class="bi bi-x-lg icon-mobile-nav close-outline"></i>
+        </button>
       </div>
 
-      <!-----------------------------         MOBILE NAVIGATION         ----------------------------->
-      <!-- <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
-      </button> -->
-
       <div class="header-welcome text-center">
-        <h1 class="text-warning fw-bold">
+        <h1 class="fw-bold">
+          <!--text-warning-->
           New Zealand's <br />
           Most Affordable Mechanic
         </h1>
         <p>
           At Mobile Mekaniko, we bring the garage to you! Our team of qualified
           mechanics is dedicated to providing top-notch service at an affordable
-          price because your satisfaction is our priority.
+          price
+          <!--  because your satisfaction is our priority. -->
         </p>
       </div>
     </header>
 
     <section class="section-convenience container">
       <div class="row">
-        <div class="col-4 d-flex flex-column justify-content-center">
+        <div
+          class="convenience-title-container col-4 d-flex flex-column justify-content-center"
+        >
           <h2 class="fw-bold">
-            We Bring the Garage <br />
+            We Bring the Garage <br class="remove-on-small-screens" />
             to you
           </h2>
           <p class="convenience-sentence">
@@ -67,7 +92,9 @@
             reliable car maintenance and repairs.
           </p>
         </div>
-        <div class="col-8 d-flex justify-content-center">
+        <div
+          class="convenience-cards-container col-8 d-flex justify-content-center align-self-center"
+        >
           <div
             class="section-convenience-card section-convenience-card1 d-flex flex-column justify-content-center"
           >
@@ -86,9 +113,8 @@
             <ion-icon name="wallet"></ion-icon>
             <p class="section-convenience-card-title fw-bold">Affordable</p>
             <p class="section-convenience-card-description">
-              Our team of qualified mechanics will come to your location,
-              equipped with the necessary tools and expertise to get your car
-              back on the road.
+              We offer competitive pricing without compromising on the quality
+              of our services.
             </p>
           </div>
         </div>
@@ -97,17 +123,21 @@
 
     <section class="section-choose container">
       <div class="row">
-        <div class="col-6">
-          <img src="/Photos/photos2/Home-photos/Mechanic-photo.png" alt="" />
+        <div
+          class="col-6 section-choose-img-container d-flex align-items-center justify-content-center"
+        >
+          <!-- <img src="/Photos/photos2/Home-photos/Mechanic-photo.png" alt="" /> -->
+          <img src="/Photos/Safety-photo.jpg" alt="" />
         </div>
         <div
           class="section-choose-text col-6 d-flex flex-column justify-content-center"
         >
           <h2 class="section-choose-title fw-bold">
-            Qualified Mechanics Providing <br />
+            Qualified Mechanics Providing <br id="section-choose-break" />
             Top-Notch Service
           </h2>
-          <p class="section-choose-descrption mt-5">
+          <p class="section-choose-descrption">
+            <!-- mt 5-->
             At Mobile Mekaniko, we take pride in our team of qualified mechanics
             who are dedicated to providing top-notch service. We prioritize your
             satisfaction and ensure that your car is in the best hands.
@@ -117,17 +147,19 @@
           >
             <li class="d-flex align-items-center">
               <ion-icon name="checkmark"></ion-icon
-              ><span class="ms-4"
+              ><span class="ms-4" id="repair-text"
                 >Convenient On-Site Repair for Your Vehicle</span
               >
             </li>
             <li class="d-flex align-items-center">
               <ion-icon name="checkmark"></ion-icon
-              ><span class="ms-4">Affordable Pricing Quality Service</span>
+              ><span class="section-choose-list-affordable ms-4"
+                >Affordable Pricing Quality Service</span
+              >
             </li>
             <li class="d-flex align-items-center">
               <ion-icon name="checkmark"></ion-icon
-              ><span class="ms-4"
+              ><span id="customer-text" class="ms-4"
                 >Keeping our Customers Happy is at the heart of what we do</span
               >
             </li>
@@ -144,7 +176,10 @@
       </div>
 
       <div class="services-cards-container d-flex justify-content-center mt-5">
-        <div class="services-cards d-flex flex-column justify-content-center">
+        <div
+          class="services-cards cards-title-1 d-flex flex-column justify-content-center"
+          id="carServicingCard"
+        >
           <i class="bi bi-droplet-fill"></i>
           <span class="services-cards-title fw-bold">Car Servicing</span>
           <span class="services-cards-description mt-3"
@@ -155,6 +190,7 @@
         </div>
         <div
           class="services-cards cards-title-2 d-flex flex-column justify-content-center"
+          id="carRepairCard"
         >
           <i class="bi bi-tools"></i>
           <span class="services-cards-title fw-bold">Car Repairs</span>
@@ -165,7 +201,8 @@
           >
         </div>
         <div
-          class="services-cards cards-title-4 d-flex flex-column justify-content-center"
+          class="services-cards cards-title-3 d-flex flex-column justify-content-center"
+          id="carTyresCard"
         >
           <i class="bi bi-server"></i>
           <span class="services-cards-title fw-bold">Tyres</span>
@@ -177,6 +214,7 @@
         </div>
         <div
           class="services-cards cards-title-4 d-flex flex-column justify-content-center"
+          id="carBrakesCard"
         >
           <i class="bi bi-gear-wide-connected"></i>
           <span class="services-cards-title fw-bold">Brakes</span>
@@ -188,7 +226,10 @@
         </div>
       </div>
 
-      <button class="btn-section-services align-self-center">
+      <button
+        class="btn-section-services align-self-center"
+        id="viewAllServicesButton"
+      >
         View All Services
       </button>
     </section>
@@ -203,7 +244,7 @@
             class="section-contact-title d-flex flex-column align-items-center pt-3 mb-5"
           >
             <h2 class="fw-bold">Book a Mekaniko</h2>
-            <p class="text-center">
+            <p class="text-center" id="contact-description">
               Contact Mobile Mekaniko for reliable, affordable mobile auto
               services. We're ready to answer your questions and schedule your
               appointment.
@@ -212,29 +253,29 @@
 
           <form action="">
             <div class="form-group mb-3">
-              <input type="text" class="form-control" placeholder="Name:" />
+              <input type="text" class="form-control" id="name" placeholder="Name:" />
             </div>
             <div class="form-group mb-3">
-              <input type="text" class="form-control" placeholder="Car Rego:" />
+              <input type="text" class="form-control" id="rego" placeholder="Rego #:" />
             </div>
             <div class="form-group mb-3">
-              <input type="email" class="form-control" placeholder="Email:" />
+              <input type="email" class="form-control" id="email" placeholder="Email Address" />
             </div>
             <div class="form-group mb-3">
-              <input type="text" class="form-control" placeholder="Phone:" />
+              <input type="text" class="form-control" id="contactNumber" placeholder="Contact #" />
             </div>
             <div class="form-group mb-3">
-              <select name="" id="" class="form-control">
+              <select name="" id="serviceTypeSelect" class="form-control">
                 <option value="" selected disabled>Type of Service</option>
-                <option value="">Car Servicing</option>
-                <option value="">Car Repairs</option>
-                <option value="">Tyres</option>
-                <option value="">Brakes</option>
-                <option value="">Inquiry</option>
+                <option value="Car Servicing" class="service-type">Car Servicing</option>
+                <option value="Car Repairs" class="service-type">Car Repairs</option>
+                <option value="Tyres" class="service-type">Tyres</option>
+                <option value="Brakes" class="service-type">Brakes</option>
+                <option value="Inquiry" class="service-type">Inquiry</option>
               </select>
             </div>
             <div class="form-group contact-message-container mb-3">
-              <label for="contact-message">Message: </label>
+              <label for="message">Message: </label>
               <textarea
                 name=""
                 id="contact-message"
@@ -242,7 +283,7 @@
               ></textarea>
             </div>
           </form>
-          <button class="">Submit</button>
+          <button class="" onclick="SendMail();">Submit</button>
         </div>
       </div>
     </section>
@@ -259,38 +300,39 @@
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href="" class="ms-3"><i class="bi bi-facebook"></i></a>
           </div>
-          <p>&copy; 2024 Mobile Mekaniko. All Rights Reserved.</p>
+          <p id="year">&copy; Mobile Mekaniko. All Rights Reserved.</p>
         </div>
         <div class="col-3 d-flex flex-column ms-5">
           <h3>Services</h3>
-          <a href="">Oil Changes</a>
-          <a href="">Fluid Checks</a>
-          <a href="">Top Ups</a>
-          <a href="">Filter Replacements</a>
-          <a href="">Battery Testing and Replacements</a>
-          <a href="">General Inspections</a>
-          <a href="">Engine Diagnostics and Repair</a>
-          <a href="">Transmision Repair</a>
-          <a href="">Electrical System Repair</a>
-          <a href="">Suspension and Steering Repair</a>
-          <a href="">Exhaust System Repair</a>
-          <a href="">Cooling System Repair</a>
-          <a href="">Tyre Inspection</a>
-          <a href="">Tyre Repair</a>
-          <a href="">Tyre Replacement</a>
-          <a href="">Tyre Rotation</a>
-          <a href="">Wheel Balancing</a>
-          <a href="">Wheel Alignment</a>
-          <a href="">Brake Inspection</a>
-          <a href="">Brake Pad Replacement</a>
-          <a href="">Rotor Resurfacing and Replacement</a>
-          <a href="">Brake Fluid Services</a>
-          <a href="">Brake Caliper Services</a>
-          <a href="">ABS Diagnostics and Repairs</a>
+          <a href="/services.html#servicing">Oil Changes</a>
+          <a href="/services.html#servicing">Fluid Checks & Top Ups</a>
+          <a href="/services.html#servicing">Filter Replacements</a>
+          <a href="/services.html#servicing"
+            >Battery Testing and Replacements</a
+          >
+          <a href="/services.html#servicing">General Inspections</a>
+          <a href="/services.html#repairs">Engine Diagnostics and Repair</a>
+          <a href="/services.html#repairs">Transmision Repair</a>
+          <a href="/services.html#repairs">Electrical System Repair</a>
+          <a href="/services.html#repairs">Suspension and Steering Repair</a>
+          <a href="/services.html#repairs">Exhaust System Repair</a>
+          <a href="/services.html#repairs">Cooling System Repair</a>
+          <a href="/services.html#tyres">Tyre Inspection</a>
+          <a href="/services.html#tyres">Tyre Repair</a>
+          <a href="/services.html#tyres">Tyre Replacement</a>
+          <a href="/services.html#tyres">Tyre Rotation</a>
+          <a href="/services.html#tyres">Wheel Balancing</a>
+          <a href="/services.html#brakes">Wheel Alignment</a>
+          <a href="/services.html#brakes">Brake Inspection</a>
+          <a href="/services.html#brakes">Brake Pad Replacement</a>
+          <a href="/services.html#brakes">Rotor Resurfacing and Replacement</a>
+          <a href="/services.html#brakes">Brake Fluid Services</a>
+          <a href="/services.html#brakes">Brake Caliper Services</a>
+          <a href="/services.html#brakes">ABS Diagnostics and Repairs</a>
         </div>
         <div class="col-3">
           <h3>Location</h3>
-          <a href="">Auckland</a>
+          <a href="" class="mb-5">Auckland</a>
         </div>
         <div class="col-3">
           <h3>About</h3>
@@ -308,6 +350,9 @@
         </div>
       </div>
     </footer>
+
+    
+    <script src="/script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
