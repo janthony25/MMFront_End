@@ -365,10 +365,10 @@ document.addEventListener("DOMContentLoaded", function() {
             // Define the links for small screens
             const smallScreenLinks = `
                 <h3>Services</h3>
-                <a href="/services.html#servicing">Car Servicing</a>
-                <a href="/services.html#repairs">Car Repairs</a>
-                <a href="/services.html#tyres">Tyres</a>
-                <a href="/services.html#brakes">Brakes</a>
+                <a href="/services.html#servicing">General Repair</a>
+                <a href="/services.html#repairs">Oil Changes</a>
+                <a href="/services.html#tyres">Brake Services</a>
+                <a href="/services.html#brakes">Painting & Panel Beating</a>
             `;
 
             // Check current viewport width
@@ -425,6 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const carRepairCard = document.getElementById('carRepairCard');
     const carTyresCard = document.getElementById('carTyresCard');
     const carBrakesCard = document.getElementById('carBrakesCard');
+    const readMore = document.getElementById('readMore');
 
     if (viewAllServicesButton) {
         viewAllServicesButton.addEventListener('click', function () {
@@ -453,6 +454,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (carBrakesCard) {
         carBrakesCard.addEventListener('click', function(){
             window.location.href = 'services.html#paint';
+        });
+    }
+
+    if (readMore){
+        readMore.addEventListener('click', function(){
+            window.location.href = 'about.html';
         });
     }
 });
