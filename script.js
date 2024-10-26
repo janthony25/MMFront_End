@@ -434,25 +434,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (carServicingCard) {
         carServicingCard.addEventListener('click', function () {
-            window.location.href = 'services.html#servicing';
+            window.location.href = 'services.html#repairs';
         });
     }
 
     if (carRepairCard) {
         carRepairCard.addEventListener('click', function(){
-            window.location.href = 'services.html#repairs';
+            window.location.href = 'services.html#servicing';
         });
     }
 
     if (carTyresCard) {
         carTyresCard.addEventListener('click', function(){
-            window.location.href = 'services.html#tyres';
+            window.location.href = 'services.html#brakes';
         });
     }
 
     if (carBrakesCard) {
         carBrakesCard.addEventListener('click', function(){
-            window.location.href = 'services.html#brakes';
+            window.location.href = 'services.html#paint';
         });
     }
 });
