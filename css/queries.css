@@ -3,6 +3,13 @@
 /* *************************  */
 
 @media (max-width: 87.4375em) {
+
+    .services-cards {
+        height: 35rem !important;
+        width: 30rem !important;
+        padding-top: 4rem !important;
+        padding-bottom: 7rem !important;
+    }
     /* *************************  */
     /*          INDEX HTML        */
     /* *************************  */
@@ -110,6 +117,8 @@
 /* *************************  */
 
 @media (max-width: 74.9375em) {
+
+    
 
     /* *************************  */
     /*         INDEX HTML         */
@@ -422,6 +431,13 @@
 /* *************************  */
 
 @media (max-width: 61.9375em) {
+    .services-cards {
+        height: 40rem !important;
+        width: 30rem !important;
+        padding-top: 4rem !important;
+        padding-bottom: 7rem !important;
+    }
+   
     .header .sticky-nav .nav-logo, .header-about .sticky-nav .nav-logo, .header-services .sticky-nav .nav-logo, .header-contact .sticky-nav .nav-logo, .sticky-nav .main-nav-link {
         color: #333 !important;
     }
@@ -798,6 +814,13 @@ NEWLY ADDED*******************************************
      /* *************************  */
 
 @media (max-width: 48em) {
+
+    .services-cards {
+        height: 35rem !important;
+        width: 30rem !important;
+        padding-top: 4rem !important;
+        padding-bottom: 7rem !important;
+    }
 
     button[onclick="SendMail();"],
     .book-a-mekaniko button {

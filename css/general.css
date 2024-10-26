@@ -100,6 +100,7 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
+    padding-top: 2rem;
     transition: all 0.3s;
 }
 
@@ -126,6 +127,24 @@ body {
     color: #555;
 }
 
+/* Icon Container */
+.icon-container {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 132, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+/* PNG Icon Styling */
+.service-icon {
+    width: 60px; /* Adjust based on your PNG size */
+    height: 60px; /* Adjust based on your PNG size */
+    object-fit: contain; /* Maintains aspect ratio */
+}
 
 /* *************************  */
 /*    SERVICING PAGE           */
@@ -407,6 +426,7 @@ button[onclick="SendMail();"]:active,
     padding: 1rem 0;
     z-index: 9999;
     transition: all 0.3s ease-in-out;
+    
 }
 
 /* Ensure the nav container takes full width */
@@ -415,6 +435,7 @@ button[onclick="SendMail();"]:active,
     background-color: transparent;
     transition: all 0.3s ease-in-out;
 }
+
 
 /* When sticky, give nav-container background */
 .sticky-nav.nav-container {
