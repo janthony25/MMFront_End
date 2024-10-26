@@ -51,6 +51,7 @@ body {
 
 
 
+
 .section-convenience-card {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -336,3 +337,87 @@ body {
 .about-commitment-card p {
     font-size: 1.8rem;
 }
+
+
+button[onclick="SendMail();"],
+.book-a-mekaniko button {
+    background-color: rgb(237, 163, 66);
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #000; /* Add explicit text color */
+    -webkit-appearance: none; /* Remove default iOS button styling */
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Hover state */
+button[onclick="SendMail();"]:hover,
+.book-a-mekaniko button:hover {
+    background-color: rgb(231, 150, 45);
+}
+
+/* Active state */
+button[onclick="SendMail();"]:active,
+.book-a-mekaniko button:active {
+    transform: translateY(1px);
+}
+
+
+/* Style adjustments for sticky nav - works for all headers */
+.header .sticky-nav .nav-logo,
+.header-about .sticky-nav .nav-logo,
+.header-services .sticky-nav .nav-logo,
+.header-contact .sticky-nav .nav-logo,
+.sticky-nav .main-nav-link {
+    color: #333 !important;
+}
+
+.sticky-nav .main-nav-link:hover,
+.sticky-nav .main-nav-link.active {
+    color: rgb(231, 150, 45) !important;
+}
+
+.sticky-nav .nav-logo span {
+    color: rgb(231, 150, 45) !important;
+}
+
+/* Keep phone number orange in sticky nav */
+.sticky-nav .main-nav-list a.num {
+    color: rgb(231, 150, 45) !important;
+}
+
+.header .sticky-nav .nav-logo, .header-about .sticky-nav .nav-logo, .header-services .sticky-nav .nav-logo, .header-contact .sticky-nav .nav-logo, .sticky-nav .main-nav-link {
+    color: white !important;
+}
+
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ensure the nav container takes full width */
+.nav-container {
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+/* When sticky, give nav-container background */
+.sticky-nav.nav-container {
+    background-color: rgb(56, 56, 56);
+}
+

@@ -1,15 +1,40 @@
 // MOBILE NAVIGATION
-
 const btnNavEl = document.querySelector('.btn-mobile-nav');
 const headerEl = document.querySelector('.header');
 const htmlEl = document.documentElement;
+const mainNav = document.querySelector('.main-nav'); // Add this line
 
+// Remove duplicate code and combine mobile nav and sticky nav functionality
 if (btnNavEl && headerEl && htmlEl) {
     btnNavEl.addEventListener('click', function() {
         headerEl.classList.toggle('nav-open');
         htmlEl.classList.toggle('no-scroll');
+        mainNav.classList.toggle('nav-open'); // Add this line
     });
 }
+
+// STICKY NAVIGATION
+document.addEventListener('DOMContentLoaded', function() {
+    const navContainer = document.querySelector('.nav-container');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll <= 0) {
+            navContainer.classList.remove('sticky-nav');
+            return;
+        }
+        
+        if (currentScroll > 100) {
+            navContainer.classList.add('sticky-nav');
+        } else {
+            navContainer.classList.remove('sticky-nav');
+        }
+
+        lastScroll = currentScroll;
+    });
+});
 
 // ACCORDION
 document.querySelectorAll('.accordion .contentBx').forEach(contentBx => {
@@ -500,6 +525,8 @@ function SendMail() {
     emailjs.send("service_xoxcz9b", "template_fk9os97", params)
       .then(function(response) {
         alert('Email successfully sent!');
+
+        
       })
       .catch(function(error) {
         alert('Failed to send email.');

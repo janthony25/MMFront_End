@@ -422,10 +422,60 @@
 /* *************************  */
 
 @media (max-width: 61.9375em) {
+    .header .sticky-nav .nav-logo, .header-about .sticky-nav .nav-logo, .header-services .sticky-nav .nav-logo, .header-contact .sticky-nav .nav-logo, .sticky-nav .main-nav-link {
+        color: #333 !important;
+    }
+
+    .sticky-nav {
+        padding: 0.5rem 0;
+    }
+    
+    /* Adjust mobile menu when sticky for all header types */
+    .header .sticky-nav .main-nav,
+    .header-about .sticky-nav .main-nav,
+    .header-services .sticky-nav .main-nav,
+    .header-contact .sticky-nav .main-nav {
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.97);
+    }
+
+    /* Adjust mobile nav button color in sticky nav */
+    .sticky-nav .icon-mobile-nav {
+        color: rgb(231, 150, 45);
+    }
     
 /* *************************  */
 /*        MOBILE NAVIGATION   */
 /* *************************  */
+
+/*
+NEWLY ADDED*******************************************
+*/
+
+.about-header-welcome h1,
+.services-header-welcome h1 {
+    font-size: 4rem;
+    white-space: normal; /* Allow text to wrap */
+    width: 100%;
+}
+
+.about-header-welcome p,
+.services-header-welcome p {
+    font-size: 1.8rem;
+    width: 100% !important;
+    white-space: normal; /* Allow text to wrap */
+}
+
+/* Ensure container is properly sized */
+.about-header-welcome,
+.services-header-welcome {
+    width: 90%;
+    padding: 0 15px;
+}
+
+/*
+******************************************************
+*/
 
 .btn-mobile-nav {
     display: block;
@@ -701,6 +751,8 @@
     font-size: 1.4rem;
 }
 
+
+
     /* *************************  */
     /*       SERVICES HTML        */
     /* *************************  */
@@ -746,6 +798,18 @@
      /* *************************  */
 
 @media (max-width: 48em) {
+
+    button[onclick="SendMail();"],
+    .book-a-mekaniko button {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        max-width: 10rem;
+        margin: 0 auto;
+        display: block;
+        color: #000;
+        background-color: rgb(237, 163, 66);
+    }
 
     /* *************************  */
     /*         INDEX HTML         */
@@ -962,6 +1026,31 @@
     /* *************************  */
 
 @media (max-width: 34.75em) {
+
+    button[onclick="SendMail();"],
+    .book-a-mekaniko button {
+        -webkit-appearance: none;
+        font-size: 1.4rem;
+        height: 3.6rem;
+    }
+
+    .about-header-welcome h1,
+    .services-header-welcome h1,
+    .header-contact .about-header-welcome h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    .about-header-welcome p,
+    .services-header-welcome p,
+    .header-contact .about-header-welcome p {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    /* ******************************************************************************* */
 
 .container.d-flex.justify-content-between.align-items-center.pt-5.nav-container {
     padding-top: 1rem !important;
