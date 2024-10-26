@@ -336,8 +336,8 @@
     border: none;
     font-size: 1.4rem;
     font-weight: 500;
-    color: white;
-    background-color: #45260a;
+    color: white !important;
+    background-color: #45260a !important;
     transition: all 0.3s;
 }
 

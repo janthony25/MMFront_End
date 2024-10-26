@@ -815,6 +815,10 @@ NEWLY ADDED*******************************************
 
 @media (max-width: 48em) {
 
+    .btn-submit{
+        margin-left: 0 !important;
+    }
+
     .services-cards {
         height: 35rem !important;
         width: 30rem !important;

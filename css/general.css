@@ -360,7 +360,7 @@ body {
 
 button[onclick="SendMail();"],
 .book-a-mekaniko button {
-    background-color: rgb(237, 163, 66);
+    background-color: rgb(255, 132, 0);
     width: 10rem;
     height: 4rem;
     font-size: 1.6rem;
@@ -442,3 +442,7 @@ button[onclick="SendMail();"]:active,
     background-color: rgb(56, 56, 56);
 }
 
+
+.btn-submit{
+    margin-left: 0 !important;
+}
