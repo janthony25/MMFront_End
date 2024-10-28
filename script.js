@@ -532,7 +532,14 @@ function SendMail() {
     emailjs.send("service_xoxcz9b", "template_fk9os97", params)
       .then(function(response) {
         alert('Email successfully sent!');
-
+        
+          // Clear the form fields after successful email send
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("rego").value = "";
+          document.getElementById("contactNumber").value = "";
+          document.getElementById("serviceTypeSelect").value = "";
+          document.getElementById("contact-message").value = "";
         
       })
       .catch(function(error) {
