@@ -431,6 +431,7 @@
 /* *************************  */
 
 @media (max-width: 61.9375em) {
+
     .services-cards {
         height: 40rem !important;
         width: 30rem !important;
@@ -814,6 +815,15 @@ NEWLY ADDED*******************************************
      /* *************************  */
 
 @media (max-width: 48em) {
+
+
+    .convenience-title-container h2::before{
+        display: none;
+    }
+    
+    .convenience-sentence{
+        display: none;
+    }
 
     .btn-submit{
         margin-left: 0 !important;
