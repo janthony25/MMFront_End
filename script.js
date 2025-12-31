@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (headerWelcomeParagraph) {
             if (mediaQuery.matches) {
-                headerWelcomeParagraph.innerHTML = 'At Mobile Mekaniko, we bring the garage to you! Our team of qualified mechanics is dedicated to <br> providing top-notch service at an affordable price';
+                headerWelcomeParagraph.innerHTML = 'At MobMek Auto Services, honesty comes first. Our team of qualified mechanics is committed to <br> delivering quality workmanship, transparent pricing, and trustworthy service.';
             } else {
-                headerWelcomeParagraph.innerHTML = 'At Mobile Mekaniko, we bring the garage to you! Our team of qualified mechanics is dedicated to providing top-notch service at an affordable price';
+                headerWelcomeParagraph.innerHTML = 'At MobMek Auto Services, honesty comes first. Our team of qualified mechanics is committed to delivering quality workmanship, transparent pricing, and trustworthy service.';
             }
         }
     }
@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (servicesWelcomeParagraph) {
             if (mediaQuery.matches) {
-                servicesWelcomeParagraph.innerHTML = 'At Mobile Mekaniko, we provide a full range of automotive services to keep your vehicle in top <br> shape. Our expert mechanics deliver high-quality, convenient, and affordable care to your location.';
+                servicesWelcomeParagraph.innerHTML = 'At MOBMEK AUTO SERVICES, we provide a full range of automotive services to keep your vehicle in top <br> shape. Our expert mechanics deliver high-quality, convenient, and affordable care to your location.';
             } else {
-                servicesWelcomeParagraph.innerHTML = 'At Mobile Mekaniko, we provide a full range of automotive services to keep your vehicle in top shape. Our expert mechanics deliver high-quality, convenient, and affordable care to your location.';
+                servicesWelcomeParagraph.innerHTML = 'At MOBMEK AUTO SERVICES, we provide a full range of automotive services to keep your vehicle in top shape. Our expert mechanics deliver high-quality, convenient, and affordable care to your location.';
             }
         }
     }
@@ -179,8 +179,8 @@ window.addEventListener('resize', handleSectionChooseImgContainer);
 
 document.addEventListener('DOMContentLoaded', function() {
     const description = document.getElementById('contact-description');
-    const defaultText = "Contact Mobile Mekaniko for reliable, affordable mobile auto services. We're ready to answer your questions and schedule your appointment.";
-    const mobileText = "Contact Mobile Mekaniko for reliable, affordable mobile auto services.";
+    const defaultText = "Get in touch with MobMek Auto Services for reliable, affordable mobile auto services. Fill in your details and reach out via call or text.";
+    const mobileText = "Get in touch with MobMek Auto Services. Fill in your details and reach out via call or text.";
 
     if (description) {
         function updateText() {
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 description.textContent = defaultText;
             }
         }
-    
+
         window.addEventListener('resize', updateText);
         updateText(); // Initial call to set the text correctly based on the initial window size
     }
@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // CONVENIENT REPAIR (CHOOSE List) Revised at 28em
 document.addEventListener('DOMContentLoaded', function() {
     const textElement = document.getElementById('repair-text');
-    const originalText = 'Convenient On-Site Repair for Your Vehicle';
+    const originalText = 'Trusted Repairs You Can Depend On';
     const shortText = 'Convenient On-Site Repair';
     const mediaQuery = window.matchMedia('(max-width: 28.5625em)');
 
@@ -396,7 +396,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (yearElement && locationColumn && originalColumn) {
         // Update the year
         const currentYear = new Date().getFullYear();
-        yearElement.innerHTML = `&copy; ${currentYear} Mobile Mekaniko. All Rights Reserved.`;
+        yearElement.innerHTML = `&copy; ${currentYear} MOBMEK AUTO SERVICES. All Rights Reserved.`;
 
         function moveYearElement() {
             if (window.innerWidth <= 556) {
@@ -484,65 +484,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function SendMail() {
-    console.log("button clicked.");
-
-    // Get form values and check if they exist
+function SendText() {
+    // Get form values
     let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
     let rego = document.getElementById("rego").value;
-    let contact = document.getElementById("contactNumber").value;
-    let subject = document.getElementById("serviceTypeSelect").value;
     let message = document.getElementById("contact-message").value;
 
-    // Log each value separately to ensure they are correctly fetched
-    console.log("Name: ", name);
-    console.log("Email: ", email);
-    console.log("Rego: ", rego);
-    console.log("Contact: ", contact);
-    console.log("Subject: ", subject);
-    console.log("Message: ", message);
-
-    // Check if values are empty
-    if (!rego) {
-      console.error("Rego is empty.");
-    }
-    if (!contact) {
-      console.error("Contact is empty.");
-    }
-
-    let params = {
-      name: name,
-      email: email,
-      rego: rego,                  // Matches {{rego}} in the template
-      contact: contact,            // Matches {{contact}} in the template
-      subject: subject,
-      message: message
-    };
-
-    console.log("Parameters to be sent: ", params);  // Log params to ensure they are correct
-
-    // Ensure that required fields are filled before sending the email
-    if (!name || !email || !rego || !contact || !subject || !message) {
-      alert("Please fill out all fields.");
+    // Validate required fields
+    if (!name || !rego || !message) {
+      alert("Please fill out all fields (Name, Rego #, and Message).");
       return;
     }
 
-    // Send the email via EmailJS
-    emailjs.send("service_xoxcz9b", "template_fk9os97", params)
-      .then(function(response) {
-        alert('Email successfully sent!');
-        
-          // Clear the form fields after successful email send
-          document.getElementById("name").value = "";
-          document.getElementById("email").value = "";
-          document.getElementById("rego").value = "";
-          document.getElementById("contactNumber").value = "";
-          document.getElementById("serviceTypeSelect").value = "";
-          document.getElementById("contact-message").value = "";
-        
-      })
-      .catch(function(error) {
-        alert('Failed to send email.');
-      });
+    // Create SMS message body
+    let smsBody = `Hi, I'm ${name}.\nRego: ${rego}\n\n${message}`;
+
+    // Phone number (New Zealand format)
+    let phoneNumber = "+64224261587";
+
+    // Create SMS URL
+    let smsUrl = `sms:${phoneNumber}?body=${encodeURIComponent(smsBody)}`;
+
+    // Open SMS app with pre-filled message
+    window.location.href = smsUrl;
   }
