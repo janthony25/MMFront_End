@@ -179,7 +179,7 @@ window.addEventListener('resize', handleSectionChooseImgContainer);
 
 document.addEventListener('DOMContentLoaded', function() {
     const description = document.getElementById('contact-description');
-    const defaultText = "Get in touch with MobMek Auto Services for reliable, affordable mobile auto services. Fill in your details and reach out via call or text.";
+    const defaultText = "Get in touch with MobMek Auto Services for reliable, affordable auto services. Fill in your details and reach out via call or text.";
     const mobileText = "Get in touch with MobMek Auto Services. Fill in your details and reach out via call or text.";
 
     if (description) {
