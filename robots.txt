@@ -1,0 +1,12 @@
+# robots.txt for MobMek Auto Services
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.mobmekauto.co.nz/sitemap.xml
+
+# Disallow certain directories (if any)
+Disallow: /css/
+Disallow: /script.js
+Disallow: /.vscode/
