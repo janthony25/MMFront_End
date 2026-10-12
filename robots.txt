@@ -6,7 +6,5 @@ Allow: /
 # Sitemaps
 Sitemap: https://www.mobmekauto.co.nz/sitemap.xml
 
-# Disallow certain directories (if any)
-Disallow: /css/
-Disallow: /script.js
+# CSS and JS stay crawlable so Google can render pages correctly
 Disallow: /.vscode/

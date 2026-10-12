@@ -7,7 +7,9 @@
     <meta name="description" content="MobMek Auto Services in Otahuhu, Auckland - Your trusted local mechanic. Expert car repairs, servicing, brakes, diagnostics & panel beating. Honest pricing. 38A Huia Road, Otahuhu. Call (64) 22 426 1587" />
     <meta name="keywords" content="mechanic near me, mechanic Otahuhu, mechanic Auckland, car repairs Otahuhu, auto service Auckland, car servicing near me, brake service Otahuhu, engine repair Auckland, panel beating, honest mechanic, affordable mechanic, car diagnostics, MobMek" />
     <meta name="author" content="MobMek Auto Services" />
-    <link rel="canonical" href="https://www.mobmekauto.co.nz/index.html" />
+    <meta name="theme-color" content="#ff8400" />
+    <link rel="canonical" href="https://www.mobmekauto.co.nz/" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff8400'/%3E%3Ctext x='50' y='74' font-size='68' font-weight='bold' font-family='Arial, sans-serif' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -26,33 +28,17 @@
     <!-- Local Business Geo Tags -->
     <meta name="geo.region" content="NZ-AUK" />
     <meta name="geo.placename" content="Otahuhu, Auckland" />
-    <meta name="geo.position" content="-36.9374;174.8494" />
-    <meta name="ICBM" content="-36.9374, 174.8494" />
+    <meta name="geo.position" content="-36.9421148;174.8365205" />
+    <meta name="ICBM" content="-36.9421148, 174.8365205" />
 
-    <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "51bF3QGUtyBBVKaWc",
-        });
-      })();
-    </script>
+    <link rel="preload" as="image" href="/Photos/Mechanic1.jpg" />
+    <link rel="stylesheet" href="/css/main.css" />
 
     <!-- Schema.org LocalBusiness Structured Data -->
     <script type="application/ld+json">
@@ -72,61 +58,60 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": -36.9374,
-        "longitude": 174.8494
+        "latitude": -36.9421148,
+        "longitude": 174.8365205
       },
       "url": "https://www.mobmekauto.co.nz",
-      "telephone": "+6422426158 7",
+      "telephone": "+64224261587",
+      "email": "mobilemekaniko.contact@gmail.com",
       "priceRange": "$$",
+      "currenciesAccepted": "NZD",
+      "hasMap": "https://maps.google.com/?q=38A+Huia+Road,+Otahuhu,+Auckland+1062",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61579381310525",
+        "https://www.tiktok.com/@mobmekauto"
+      ],
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "08:00",
-          "closes": "17:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "08:00",
-          "closes": "13:00"
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:30",
+          "closes": "16:00"
         }
       ],
-      "areaServed": {
-        "@type": "City",
-        "name": "Auckland"
-      },
+      "areaServed": [
+        { "@type": "City", "name": "Auckland" },
+        { "@type": "Place", "name": "South Auckland" },
+        { "@type": "Place", "name": "Otahuhu" },
+        { "@type": "Place", "name": "Mangere" },
+        { "@type": "Place", "name": "Papatoetoe" },
+        { "@type": "Place", "name": "Manukau" },
+        { "@type": "Place", "name": "Otara" },
+        { "@type": "Place", "name": "Onehunga" },
+        { "@type": "Place", "name": "Penrose" },
+        { "@type": "Place", "name": "Mount Wellington" },
+        { "@type": "Place", "name": "East Tamaki" },
+        { "@type": "Place", "name": "Papakura" }
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Auto Repair Services",
         "itemListElement": [
           {
             "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "General Repairs & Maintenance"
-            }
+            "itemOffered": { "@type": "Service", "name": "General Repairs & Maintenance" }
           },
           {
             "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Oil Changes & Diagnostics"
-            }
+            "itemOffered": { "@type": "Service", "name": "Oil Changes & Diagnostics" }
           },
           {
             "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Brake & Suspension Service"
-            }
+            "itemOffered": { "@type": "Service", "name": "Brake & Suspension Service" }
           },
           {
             "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Painting & Panel Beating"
-            }
+            "itemOffered": { "@type": "Service", "name": "Painting & Panel Beating" }
           }
         ]
       }
@@ -134,338 +119,386 @@
     </script>
   </head>
   <body>
-    <header class="header">
-      <div class="nav-container w-100 px-4">
-        <div
-          class="container d-flex justify-content-between align-items-center py-4"
-        >
-          <a href="/index.html" class="nav-logo"
-            ><span class="">MOBMEK</span>
-            <span style="color: white !important">AUTO SERVICES</span></a
-          >
-          <nav class="main-nav">
-            <ul
-              class="main-nav-list d-flex justify-content-between align-items-center mb-0"
-            >
-              <li><a href="/index.html" class="main-nav-link">HOME</a></li>
-              <li>
-                <a href="/about.html" class="main-nav-link ms-4">ABOUT US</a>
-              </li>
-              <li>
-                <a href="/services.html" class="main-nav-link ms-4">SERVICES</a>
-              </li>
-              <!-- <li>
-                <a href="/contact.html" class="main-nav-link ms-4">CONTACT</a>
-              </li> -->
-              <a href="tel:+64272666146" class="num ms-4">(+64) 22 426 1587</a>
-            </ul>
-          </nav>
-          <!----------- MOBILE NAVIGATION ------------>
-          <button class="btn-mobile-nav">
-            <i class="bi bi-list icon-mobile-nav menu-outline"></i>
-            <i class="bi bi-x-lg icon-mobile-nav close-outline"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="header-welcome text-center">
-        <h1 class="fw-bold">
-          <!--text-warning-->
-          <span style="color: white">New Zealand's</span> <br />
-          Most Honest Mechanic
-        </h1>
-        <p>
-          At MobMek Auto Services, honesty comes first. Our team of qualified
-          mechanics is committed to delivering quality workmanship, transparent
-          pricing, and trustworthy service.
-          <!--  because your satisfaction is our priority. -->
-        </p>
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-row">
+        <a href="/index.html" class="logo">MOBMEK <span>AUTO SERVICES</span></a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/book.html">Book Online</a></li>
+            <li>
+              <a href="tel:+64224261587" class="nav-phone">
+                <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                (+64) 22 426 1587
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
-    <section class="section-convenience container">
-      <div class="row">
-        <div
-          class="convenience-title-container col-4 d-flex flex-column justify-content-center"
-        >
-          <h2 class="fw-bold">
-            Real Mechanics That <br class="remove-on-small-screens" />
-            You Can Trust
-          </h2>
-          <p class="convenience-sentence">
-            At MobMek Auto Services, we understand how important it is to find a
-            mechanic who truly cares about your car and your safety. That’s why
-            we focus on honesty, transparency, and quality workmanship, ensuring
-            you receive reliable repairs, fair pricing
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="eyebrow">Otahuhu &bull; Auckland</span>
+          <h1>New Zealand's <span>Most Honest</span> Mechanic</h1>
+          <p class="hero-sub">
+            Honesty comes first at MobMek Auto Services. Qualified mechanics,
+            quality workmanship, transparent pricing — and your car back on the
+            road without the runaround.
           </p>
-        </div>
-        <div
-          class="convenience-cards-container col-8 d-flex justify-content-center align-self-center"
-        >
-          <div
-            class="section-convenience-card section-convenience-card1 d-flex flex-column justify-content-center"
-          >
-            <!-- <ion-icon name="car"></ion-icon> -->
-            <ion-icon name="pin"></ion-icon>
-            <p class="section-convenience-card-title fw-bold">Honest</p>
-            <p class="section-convenience-card-description">
-              Our team of qualified mechanics is committed to transparency,
-              integrity, and quality workmanship, ensuring your car receives the
-              care it deserves.
-            </p>
+          <div class="hero-cta">
+            <a href="tel:+64224261587" class="btn btn-primary">
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+              Call Us Now
+            </a>
+            <a href="/services.html" class="btn btn-ghost">View Our Services</a>
           </div>
-          <div
-            class="section-convenience-card section-convenience-card2 d-flex flex-column justify-content-center"
-          >
-            <ion-icon name="wallet"></ion-icon>
-            <p class="section-convenience-card-title fw-bold">Affordable</p>
-            <p class="section-convenience-card-description">
-              We offer competitive pricing without compromising on the quality
-              of our services.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-choose container">
-      <div class="row">
-        <div
-          class="col-6 section-choose-img-container d-flex align-items-center justify-content-center"
-        >
-          <!-- <img src="/Photos/photos2/Home-photos/Mechanic-photo.png" alt="" /> -->
-          <img src="/Photos/Safety-photo.jpg" alt="MobMek Auto Services qualified mechanics working on car repairs in Otahuhu Auckland" />
-        </div>
-        <div
-          class="section-choose-text col-6 d-flex flex-column justify-content-center"
-        >
-          <h2 class="section-choose-title fw-bold">
-            Qualified Mechanics Providing <br id="section-choose-break" />
-            Top-Notch Service
-          </h2>
-          <p class="section-choose-descrption">
-            <!-- mt 5-->
-            At MobMek Auto Services, we take pride in our team of qualified mechanics
-            who are dedicated to providing top-notch service. We prioritize your
-            satisfaction and ensure that your car is in the best hands.
-          </p>
-          <ul
-            class="section-choose-list d-flex flex-column justify-content-center"
-          >
-            <li class="d-flex align-items-center">
-              <ion-icon name="checkmark"></ion-icon
-              ><span class="ms-4" id="repair-text"
-                >Convenient On-Site Repair for Your Vehicle</span
-              >
+          <ul class="hero-chips">
+            <li>
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+              Honest, transparent pricing
             </li>
-            <li class="d-flex align-items-center">
-              <ion-icon name="checkmark"></ion-icon
-              ><span class="section-choose-list-affordable ms-4"
-                >Affordable Pricing Quality Service</span
-              >
+            <li>
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+              Qualified mechanics
             </li>
-            <li class="d-flex align-items-center">
-              <ion-icon name="checkmark"></ion-icon
-              ><span id="customer-text" class="ms-4"
-                >Keeping our Customers Happy is at the heart of what we do</span
-              >
+            <li>
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+              Easy to find in Otahuhu
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="section-services d-flex flex-column justify-content-center">
-      <div
-        class="services-title-container d-flex justify-content-center align-items-center"
-      >
-        <p class="text-center fw-bold">Our Services</p>
-      </div>
-
-      <div class="services-cards-container d-flex justify-content-center mt-5">
-        <div
-          class="services-cards cards-title-1 d-flex flex-column justify-content-center"
-          id="carServicingCard"
-        >
-          <div class="icon-container">
-            <img
-              src="/Photos/Services/repair-shop.png"
-              alt="Car Repair Icon"
-              class="service-icon"
-            />
-          </div>
-          <span class="services-cards-title fw-bold"
-            >General Repairs & Maintenance</span
-          >
-          <span class="services-cards-description mt-3"
-            >Reliable repair and maintenance solutions to ensure your vehicle’s
-            optimal performance—all without the need for a workshop visit.</span
-          >
+    <!-- ============ SERVICES ============ -->
+    <section class="section section--tint" id="services">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">What We Do</span>
+          <h2 class="section-title">Complete Care For Your Vehicle</h2>
+          <p class="section-lede">
+            From routine servicing to full panel and paint work — one team of
+            qualified mechanics for every aspect of your car's care.
+          </p>
         </div>
-
-        <div
-          class="services-cards cards-title-2 d-flex flex-column justify-content-center"
-          id="carRepairCard"
-        >
-          <div class="icon-container">
-            <img
-              src="/Photos/Services/car-oil.png"
-              alt="Car Oil Icon"
-              class="service-icon"
-            />
-          </div>
-          <span class="services-cards-title fw-bold"
-            >Oil Changes & Diagnostics</span
-          >
-          <span class="services-cards-description mt-3"
-            >Reliable oil changes and precise diagnostics to maintain your
-            vehicle's smooth and dependable performance.</span
-          >
-        </div>
-
-        <div
-          class="services-cards cards-title-3 d-flex flex-column justify-content-center"
-          id="carTyresCard"
-        >
-          <div class="icon-container">
-            <img
-              src="/Photos/Services/brakes.png"
-              alt="Tyres Icon"
-              class="service-icon"
-            />
-          </div>
-          <span class="services-cards-title fw-bold"
-            >Brake & Suspension Service</span
-          >
-          <span class="services-cards-description mt-3"
-            >Expert brake and suspension services to enhance safety, improve
-            handling, and ensure a smooth, reliable ride.</span
-          >
-        </div>
-
-        <div
-          class="services-cards cards-title-4 d-flex flex-column justify-content-center"
-          id="carBrakesCard"
-        >
-          <div class="icon-container">
-            <img
-              src="/Photos/Services/car-painting (3).png"
-              alt="Brakes Icon"
-              class="service-icon"
-            />
-          </div>
-          <span class="services-cards-title fw-bold"
-            >Painting & Panel Beating</span
-          >
-          <span class="services-cards-description mt-3"
-            >Professional painting and panel beating services to restore your
-            vehicle’s appearance and ensure a flawless finish.</span
-          >
+        <div class="cards-grid">
+          <a class="card" href="/services.html#repairs">
+            <div class="card-icon"><img src="/Photos/Services/repair-shop.png" alt="" loading="lazy" /></div>
+            <h3>General Repairs &amp; Maintenance</h3>
+            <p>Reliable repair and maintenance to keep your vehicle performing at its best — engine, transmission, electrical and more.</p>
+            <span class="card-link">Learn more
+              <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+            </span>
+          </a>
+          <a class="card" href="/services.html#servicing">
+            <div class="card-icon"><img src="/Photos/Services/car-oil.png" alt="" loading="lazy" /></div>
+            <h3>Oil Changes &amp; Diagnostics</h3>
+            <p>Reliable oil changes and precise diagnostics to keep your vehicle running smooth and dependable, every day.</p>
+            <span class="card-link">Learn more
+              <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+            </span>
+          </a>
+          <a class="card" href="/services.html#brakes">
+            <div class="card-icon"><img src="/Photos/Services/brakes.png" alt="" loading="lazy" /></div>
+            <h3>Brake &amp; Suspension Service</h3>
+            <p>Expert brake and suspension work to enhance safety, improve handling, and give you a smooth, reliable ride.</p>
+            <span class="card-link">Learn more
+              <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+            </span>
+          </a>
+          <a class="card" href="/services.html#paint">
+            <div class="card-icon"><img src="/Photos/Services/car-painting (3).png" alt="" loading="lazy" /></div>
+            <h3>Painting &amp; Panel Beating</h3>
+            <p>Professional painting and panel beating to restore your vehicle's appearance with a flawless factory finish.</p>
+            <span class="card-link">Learn more
+              <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+            </span>
+          </a>
         </div>
       </div>
-
-      <button
-        class="btn-section-services align-self-center"
-        id="viewAllServicesButton"
-      >
-        View All Services
-      </button>
     </section>
 
-    <section class="section-contact d-flex justify-content-center">
-      <div class="row section-contact-container">
-        <div class="section-contact-image col-4">
-          <!-- <img src="/Photos/photos2/Home-photos/Contact-us-photo.jpg" alt=""> -->
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section">
+      <div class="container split">
+        <div class="split-media">
+          <img src="/Photos/Safety-photo.jpg" alt="MobMek qualified mechanic servicing a car in Otahuhu, Auckland" loading="lazy" />
         </div>
-        <div class="section-contact-form col-6">
-          <div
-            class="section-contact-title d-flex flex-column align-items-center pt-3 mb-5"
-          >
-            <h2 class="fw-bold">CONTACT US</h2>
-            <p class="text-center" id="contact-description">
-              Get in touch with MobMek Auto Services by sending your name, Rego # and issue details through
+        <div>
+          <span class="eyebrow">Why Choose Us</span>
+          <h2 class="section-title">Real Mechanics You Can Trust</h2>
+          <p class="section-lede">
+            Finding a mechanic who genuinely cares about your car and your
+            safety shouldn't be hard. We built MobMek on honesty, transparency
+            and quality workmanship — nothing more, nothing less.
+          </p>
+          <ul class="checklist">
+            <li>
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+              <div>Trusted repairs you can depend on
+                <small>Thorough, dependable work on every job — big or small.</small>
+              </div>
+            </li>
+            <li>
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+              <div>Affordable pricing, quality service
+                <small>Competitive prices without compromising on quality.</small>
+              </div>
+            </li>
+            <li>
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+              <div>Customers at the heart of what we do
+                <small>Your satisfaction and safety come before everything else.</small>
+              </div>
+            </li>
+          </ul>
+          <a href="/about.html" class="btn btn-dark">More About Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURE STRIP ============ -->
+    <section class="section section--dark">
+      <div class="container feature-strip">
+        <div class="feature">
+          <h3>
+            <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+            Honest
+          </h3>
+          <p>Transparency and integrity on every job. We tell you what your car needs — and what it doesn't.</p>
+        </div>
+        <div class="feature">
+          <h3>
+            <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+            Affordable
+          </h3>
+          <p>Competitive pricing without compromising on the quality of parts or workmanship.</p>
+        </div>
+        <div class="feature">
+          <h3>
+            <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+            Convenient
+          </h3>
+          <p>Book your own time online in under a minute, and find us easily on Huia Road in Otahuhu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FIND US ============ -->
+    <section class="section" id="areas">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Find Us</span>
+          <h2 class="section-title">Your Local Mechanic In The Heart Of South Auckland</h2>
+          <p class="section-lede">
+            Our workshop is at 38A Huia Road in Otahuhu, right in the heart of
+            South Auckland — a short hop off the motorway and an easy drive from
+            across the region.
+          </p>
+        </div>
+
+        <div class="find-us">
+          <div class="map-embed">
+            <iframe
+              src="https://maps.google.com/maps?q=38A%20Huia%20Road%2C%20Otahuhu%2C%20Auckland%201062&amp;z=15&amp;output=embed"
+              title="Map showing MobMek Auto Services at 38A Huia Road, Otahuhu, Auckland"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+          <div class="find-us-details">
+            <h3>MobMek Auto Services</h3>
+            <p class="find-us-addr">
+              38A Huia Road<br />
+              Otahuhu, Auckland 1062
+            </p>
+            <p class="find-us-hours">
+              <span class="accent">Monday &ndash; Saturday</span><br />8:30am &ndash; 4:00pm
+            </p>
+            <div class="find-us-actions">
+              <a class="btn btn-primary" href="https://maps.google.com/?q=38A+Huia+Road,+Otahuhu,+Auckland+1062" target="_blank" rel="noopener">
+                <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                Get Directions
+              </a>
+              <a class="btn btn-dark" href="/book.html">Book A Time</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section section--tint" id="reviews">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Google Reviews</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+          <p class="section-lede">
+            Real reviews from real customers on Google.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <figure class="review">
+            <div class="stars" role="img" aria-label="Rated 5 out of 5">
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+            </div>
+            <blockquote>
+              Truly an honest and reliable Mechanic. First time I drove away from a
+              workshop with a problem completely fixed! The parts were pricey
+              (expected) but he was so kind with the labour charge considering how
+              much work it took to just find the problem, let alone tear down and
+              fix it. Really want to gatekeep this one lol but they genuinely
+              deserve the recognition. Highly recommend!!
+            </blockquote>
+            <figcaption>Moana Sakisi</figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="stars" role="img" aria-label="Rated 5 out of 5">
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+            </div>
+            <blockquote>
+              This mechanic is by far the best I've been to. Owner Jun is an honest
+              and reliable mechanic. He's good at what he does, communicates really
+              well with car issues and also solutions and he charges fairly also.
+              If you're just a girl like me and need someone who is honest and
+              trustworthy, this is your go to guy for any car issues 🫰
+            </blockquote>
+            <figcaption>Pitoa Fetui</figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="stars" role="img" aria-label="Rated 5 out of 5">
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+            </div>
+            <blockquote>
+              Honestly love it! Jun explained in detail what would have caused for
+              my vehicle. Took it in as well he gave a service. Honestly would be
+              coming back 🤩
+            </blockquote>
+            <figcaption>Caroline Marsters</figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="stars" role="img" aria-label="Rated 5 out of 5">
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+            </div>
+            <blockquote>
+              Friendly staff, friendly Mechanic and his team, understood the issue
+              on our vehicle and offered solutions for fix.
+            </blockquote>
+            <figcaption>Emile Rima</figcaption>
+          </figure>
+        </div>
+
+        <p class="areas-note">
+          <!-- The real Google Maps place URL for the listing. The "!1b1" segment is what
+               opens it on the reviews tab. Only the ?entry=ttu&g_ep=... session parameters
+               were stripped from the copied link — those are per-visit tracking, not part
+               of the address. -->
+          <a href="https://www.google.com/maps/place/MobMek+Auto+Services/@-36.9421148,174.8365205,17z/data=!4m18!1m9!3m8!1s0x870ac0697493064f:0x9e882011b8ff0f8d!2sMobMek+Auto+Services!8m2!3d-36.9421148!4d174.8365205!9m1!1b1!16s%2Fg%2F11x2j1bhxh!3m7!1s0x870ac0697493064f:0x9e882011b8ff0f8d!8m2!3d-36.9421148!4d174.8365205!9m1!1b1!16s%2Fg%2F11x2j1bhxh" target="_blank" rel="noopener">Read all our reviews on Google</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Need a mechanic you can trust?</h2>
+            <p>Call or message us with your name, rego and the issue — we'll sort the rest.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="tel:+64224261587" class="btn btn-white">
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+              (+64) 22 426 1587
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61579381310525" target="_blank" rel="noopener" class="btn btn-dark">
+              <svg viewBox="0 0 320 512" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+              Message Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="/index.html" class="logo">MOBMEK <span>AUTO</span></a>
+            <p>
+              Making automotive care accessible, affordable and convenient for
+              everyone in New Zealand — with your safety and satisfaction first.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/profile.php?id=61579381310525" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 320 512" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+              </a>
+              <a href="https://www.tiktok.com/@mobmekauto" target="_blank" rel="noopener" aria-label="TikTok">
+                <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="/services.html#repairs">General Repairs</a></li>
+              <li><a href="/services.html#servicing">Oil &amp; Diagnostics</a></li>
+              <li><a href="/services.html#brakes">Brakes &amp; Suspension</a></li>
+              <li><a href="/services.html#paint">Paint &amp; Panel</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="tel:+64224261587">(+64) 22 426 1587</a></li>
+              <li><a href="https://maps.google.com/?q=38A+Huia+Road,+Otahuhu,+Auckland+1062" target="_blank" rel="noopener">38A Huia Road, Otahuhu,<br />Auckland 1062</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Opening Hours</h3>
+            <p>
+              <span class="accent">Monday &ndash; Saturday:</span> 8:30am &ndash; 4:00pm<br />
+              <span class="accent">Sunday:</span> Contact us to know schedule
             </p>
           </div>
-
-          <div class="d-flex gap-3 justify-content-center flex-wrap">
-            <a href="https://www.facebook.com/profile.php?id=61579381310525" target="_blank" class="btn-submit btn-social" style="text-decoration: none;">
-              <i class="bi bi-facebook me-2"></i>Facebook
-            </a>
-            <a href="https://www.tiktok.com/@mobmekauto" target="_blank" class="btn-submit btn-social" style="text-decoration: none;">
-              <i class="bi bi-tiktok me-2"></i>TikTok
-            </a>
-            <a href="tel:+64224261587" class="btn-submit btn-social" style="text-decoration: none;">
-              <i class="bi bi-telephone-fill me-2"></i>(+64) 22 426 1587
-            </a>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <hr />
-
-    <footer class="footer">
-      <div class="container d-flex justify-content-between">
-        <div class="col-3 d-flex flex-column justify-content-between">
-          <div class="footer-logos">
-            <h2>
-              <span style="color: rgb(255, 132, 0)">MOBMEK</span> AUTO
-            </h2>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href="" class="ms-3"><i class="bi bi-facebook"></i></a>
-          </div>
+        <div class="footer-bottom">
           <p id="year">&copy; MOBMEK AUTO SERVICES. All Rights Reserved.</p>
-        </div>
-        <div class="col-3 d-flex flex-column ms-5">
-          <h3>Services</h3>
-          <a href="/services.html#servicing">Oil Changes</a>
-          <a href="/services.html#servicing">Fluid Checks & Top Ups</a>
-          <a href="/services.html#servicing">Filter Replacements</a>
-          <a href="/services.html#servicing"
-            >Battery Testing and Replacements</a
-          >
-          <a href="/services.html#servicing">General Inspections</a>
-          <a href="/services.html#repairs">Engine Diagnostics and Repair</a>
-          <a href="/services.html#repairs">Transmision Repair</a>
-          <a href="/services.html#repairs">Electrical System Repair</a>
-          <a href="/services.html#repairs">Suspension and Steering Repair</a>
-          <a href="/services.html#repairs">Exhaust System Repair</a>
-          <a href="/services.html#repairs">Cooling System Repair</a>
-          <a href="/services.html#brakes">Brake Inspection</a>
-          <a href="/services.html#brakes">Brake Pad Replacement</a>
-          <a href="/services.html#brakes">Rotor Resurfacing and Replacement</a>
-          <a href="/services.html#brakes">Brake Fluid Services</a>
-          <a href="/services.html#brakes">Brake Caliper Services</a>
-          <a href="/services.html#brakes">ABS Diagnostics and Repairs</a>
-          <a href="/services.html#paint">Paint Matching and Refinishing</a>
-          <a href="/services.html#paint">Dent and Scratch Repair</a>
-          <a href="/services.html#paint">Full Body Painting</a>
-          <a href="/services.html#paint">Bumper Repair and Painting</a>
-          <a href="/services.html#paint">Panel Replacement and Fitting</a>
-          <a href="/services.html#paint">Clear Coat Application</a>
-        </div>
-        <div class="col-3">
-          <h3>Location</h3>
-          <a href="" class="mb-5">Auckland</a>
-        </div>
-        <div class="col-3">
-          <h3>About</h3>
-          <p href="">
-            At MOBMEK AUTO SERVICES, we believe in making automotive care accessible,
-            affordable, and convenient for everyone in New Zealand. Our team of
-            qualified mechanics is committed to prioritizing your safety and
-            satisfaction above all else.
-          </p>
-          <a href="" class="">
-            <a id="readMore" class="footer-about-btn d-flex align-items-center">
-              Read More<i class="bi bi-chevron-double-right"></i>
-            </a>
-          </a>
+          <p><a href="/about.html">About</a> &nbsp;&bull;&nbsp; <a href="/services.html">Services</a></p>
         </div>
       </div>
     </footer>
 
-    <script src="/script.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="/script.js" defer></script>
   </body>
 </html>

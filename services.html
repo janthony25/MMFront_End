@@ -7,7 +7,9 @@
     <meta name="description" content="Full auto repair services in Otahuhu: car servicing, brake repairs, engine diagnostics, oil changes, panel beating & painting. Expert mechanics, honest pricing. Call MobMek Auto Services Auckland today!" />
     <meta name="keywords" content="car repairs Otahuhu, brake service Auckland, oil change near me, engine diagnostics, panel beating Otahuhu, car servicing Auckland, suspension repair, auto repair services" />
     <meta name="author" content="MobMek Auto Services" />
+    <meta name="theme-color" content="#ff8400" />
     <link rel="canonical" href="https://www.mobmekauto.co.nz/services.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff8400'/%3E%3Ctext x='50' y='74' font-size='68' font-weight='bold' font-family='Arial, sans-serif' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -25,19 +27,14 @@
     <meta name="geo.region" content="NZ-AUK" />
     <meta name="geo.placename" content="Otahuhu, Auckland" />
 
-    <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+    <link rel="preload" as="image" href="/Photos/Mechanic1.jpg" />
+    <link rel="stylesheet" href="/css/main.css" />
 
     <!-- Schema.org LocalBusiness Structured Data -->
     <script type="application/ld+json">
@@ -55,400 +52,383 @@
         "addressCountry": "NZ"
       },
       "url": "https://www.mobmekauto.co.nz",
-      "telephone": "+6422426 1587"
+      "telephone": "+64224261587"
+    }
+    </script>
+
+    <!-- FAQ Structured Data — answers must stay identical to the visible FAQ text below,
+         or Google drops the rich result. Update both together. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a car service cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your vehicle and what it needs. We always give you a clear price before any work starts — no surprises when you pick the car up. Call us on (+64) 22 426 1587 with your rego and we'll give you an honest quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are you, and is there parking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our workshop is at 38A Huia Road, Otahuhu, Auckland 1062 — a few minutes off the motorway and easy to reach from anywhere in South Auckland. Bring the car to us and we'll take it from there."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do your customers travel from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our workshop is in Otahuhu, in the heart of South Auckland, and customers drive to us from Mangere, Papatoetoe, Manukau, Otara, Onehunga, Penrose, Mount Wellington, East Tamaki, Papakura and right across the region. We're a short hop off the motorway, so it's an easy run from most of Auckland."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long will my car be in for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most routine jobs — an oil change, a brake service, diagnostics — are done the same day. Bigger repairs and panel work take longer, and we'll tell you up front how long we expect to need before we start."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I book an appointment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The quickest way is our online booking page, where you can pick any free time from Monday to Saturday. You can also call or text us on (+64) 22 426 1587."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you open on Sundays?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not always — Sunday availability varies. We're open Monday to Saturday, 8:30am to 4:00pm. If you need a Sunday, get in touch and we'll let you know if we can fit you in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kinds of vehicles do you work on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We service and repair most makes and models of cars, vans and light commercial vehicles — Japanese, European and Australian. If you're unsure whether we cover yours, give us a call."
+          }
+        }
+      ]
     }
     </script>
   </head>
   <body>
-    <header class="header-services header">
-      <div class="nav-container w-100 px-4">
-        <div class="container d-flex justify-content-between align-items-center py-4">
-          <a href="/index.html" class="nav-logo"
-            ><span class="">MOBMEK</span> <span style="color: white !important;">AUTO SERVICES</span></a
-          >
-          <nav class="main-nav">
-            <ul class="main-nav-list d-flex justify-content-between align-items-center mb-0">
-              <li><a href="/index.html" class="main-nav-link">HOME</a></li>
-              <li><a href="/about.html" class="main-nav-link ms-4">ABOUT US</a></li>
-              <li>
-                <a href="/services.html" class="main-nav-link ms-4">SERVICES</a>
-              </li>
-              <!-- <li><a href="/contact.html" class="main-nav-link ms-4">CONTACT</a></li> -->
-              <a href="tel:+64272666146" class="num ms-4">(+64) 22 426 1587</a>
-            </ul>
-          </nav>
-          <button class="btn-mobile-nav">
-            <i class="bi bi-list icon-mobile-nav menu-outline"></i>
-            <i class="bi bi-x-lg icon-mobile-nav close-outline"></i>
-          </button>
-        </div>
-      </div>
-
-      
-
-      <div class="services-header-welcome text-center">
-        <h1 class=" fw-bold">Services</h1>
-        <p>
-          At MOBMEK AUTO SERVICES, we provide a full range of automotive services to 
-          keep your vehicle in top shape. Our expert mechanics deliver high-quality, 
-          convenient, and affordable care to your location.
-        </p>
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-row">
+        <a href="/index.html" class="logo">MOBMEK <span>AUTO SERVICES</span></a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/book.html">Book Online</a></li>
+            <li>
+              <a href="tel:+64224261587" class="nav-phone">
+                <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                (+64) 22 426 1587
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
-    
-    <section class="section-servicing container" id="repairs">
-      <div
-        class="servicing-title d-flex align-items-center justify-content-center"
-      >
-        <h2 class="text-center" >General Repair & Maintenance</h2>
-      </div>
-      <div class="row service-row">
-        <div
-          class="col-6 service-image-container d-flex justify-content-center align-items-center"
-        >
-        <div class="image">
-          <img src="/Photos/Car-Repair3.jpg" alt="Professional car repair and maintenance services at MobMek Auto Services Otahuhu" />
-          <div class="image-content d-flex flex-column justify-content-center align-items-center p-4">
-            <h4 class="text-center">Reliable repair and maintenance solutions to ensure your vehicle’s optimal performance—all without the need for a workshop visit.</h4>
-            <a href="/contact.html" href="/contact.html" class="btn btn-warning">Get a Quote</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-6 d-flex justify-content-start align-items-center">
-          <div class="accordion d-flex align-items-start flex-column justify-content-center">
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Engine Repair</div>
-              <div class="content">
-                <p>
-                  Comprehensive engine checks and repairs to keep your vehicle running smoothly.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Transmission Repair</div>
-              <div class="content">
-                <p>
-                  Expert diagnosis and repair of transmission issues to keep your car shifting smoothly.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Electrical System Repair</div>
-              <div class="content">
-                <p>
-                  Fixing issues with your car's electrical components, including starters, alternators, and wiring.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Suspension and Steering</div>
-              <div class="content">
-                <p>
-                  Ensuring a smooth and controlled ride by addressing any suspension or steering problems.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Exhaust System Repair</div>
-              <div class="content">
-                <p>
-                  Keeping your exhaust system functioning properly for a quieter and more efficient ride.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Cooling System Repair</div>
-              <div class="content">
-                <p>
-                  Maintaining your engine's temperature with radiator and coolant system repairs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="section-servicing container" id="servicing">
-      <div
-        class="servicing-title d-flex align-items-center justify-content-center"
-      >
-        <h2 class="text-center" >Oil Changes & Diagnostics</h2>
-      </div>
-      <div class="row service-row">
-        <div
-          class="col-6 service-image-container d-flex justify-content-center align-items-center"
-        >
-        <div class="image">
-          <img src="/Photos/Car-Service3.jpg" alt="Oil change and car diagnostics service Auckland MobMek" />
-          <div class="image-content d-flex flex-column justify-content-center align-items-center p-4">
-            <h4 class="text-center">Reliable oil changes and precise diagnostics to maintain your vehicle's smooth and dependable performance.</h3>
-            <a href="/contact.html" class="btn btn-warning">Get a Quote</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-6 d-flex justify-content-start align-items-center">
-          <div class="accordion d-flex align-items-start flex-column justify-content-center">
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Oil Changes</div>
-              <div class="content">
-                <p>
-                  Keep your engine running smoothly with regular oil changes.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Fluid Checks and Top-Ups</div>
-              <div class="content">
-                <p>
-                  Keep your engine running smoothly with regular oil changes.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Filter Replacements</div>
-              <div class="content">
-                <p>
-                  Improve your car's efficiency with clean air and fuel filters.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Battery Replacement</div>
-              <div class="content">
-                <p>
-                  Ensure your vehicle starts reliably with our battery services.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">General Inspections</div>
-              <div class="content">
-                <p>
-                  Comprehensive checks to identify and address any potential issues.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-    <section class="section-servicing container" id="brakes">
-      <div
-        class="servicing-title d-flex align-items-center justify-content-center"
-      >
-        <h2 class="text-center">Brake & Suspension Service</h2>
-      </div>
-      <div class="row service-row">
-        <div
-          class="col-6 service-image-container d-flex justify-content-center align-items-center"
-        >
-        <div class="image">
-          <img src="/Photos/Brakes2.jpg" alt="Brake and suspension repair service Auckland Otahuhu" />
-          <div class="image-content d-flex flex-column justify-content-center align-items-center p-4">
-            <h4 class="text-center">Expert brake and suspension services to enhance safety, improve handling, and ensure a smooth, reliable ride.</h4>
-            <a href="/contact.html" class="btn btn-warning">Get a Quote</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-6 d-flex justify-content-start align-items-center">
-          <div class="accordion d-flex align-items-start flex-column justify-content-center">
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Brake Inspections</div>
-              <div class="content">
-                <p>
-                  Thorough checks to assess the condition of your brake pads, rotors, and fluid.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Brake Pad Replacements</div>
-              <div class="content">
-                <p>
-                  High-quality brake pad replacements for effective and reliable braking.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Rotor Replacement</div>
-              <div class="content">
-                <p>
-                  Ensuring smooth and efficient braking by addressing worn or damaged rotors.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Brake Fluid Services</div>
-              <div class="content">
-                <p>
-                  Flushing and replacing brake fluid to maintain optimal braking performance.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Brake Caliper Services</div>
-              <div class="content">
-                <p>
-                  Inspection and servicing of calipers to ensure proper functioning and longevity.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">ABS Diagnostics and Repairs</div>
-              <div class="content">
-                <p>
-                  Expert diagnosis and repair of Anti-lock Braking System (ABS) issues for enhanced safety.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-servicing container" id="paint">
-      <div
-        class="servicing-title d-flex align-items-center justify-content-center"
-      >
-        <h2 class="text-center">Painting & Panel Beating</h2>
-      </div>
-      <div class="row service-row">
-        <div
-          class="col-6 service-image-container d-flex justify-content-center align-items-center"
-        >
-        <div class="image">
-          <img src="/Photos/Tyres2.jpg" alt="Professional panel beating and car painting services MobMek Auckland" />
-          <div class="image-content d-flex flex-column justify-content-center align-items-center p-4">
-            <h4 class="text-center">Professional painting and panel beating services to restore your vehicle’s appearance and ensure a flawless finish.</h4>
-            <a href="/contact.html" class="btn btn-warning">Get a Quote</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-6 d-flex justify-content-start align-items-center">
-          <div class="accordion d-flex align-items-start flex-column justify-content-center">
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Paint Matching and Refinishing</div>
-              <div class="content">
-                <p>
-                  High-quality paint matching and refinishing to restore your car's original look.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Dent and Scratch Repair</div>
-              <div class="content">
-                <p>
-                  Precision repair for dents and scratches to bring back the smooth finish of your vehicle.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Full Body Painting</div>
-              <div class="content">
-                <p>
-                  Complete repainting services to give your car a fresh, new look.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Bumper Repair and Painting</div>
-              <div class="content">
-                <p>
-                  Restoration and painting of bumpers to fix any damages or color mismatches.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Panel Replacement and Fitting</div>
-              <div class="content">
-                <p>
-                  Replacement and fitting of damaged panels for a seamless repair.
-                </p>
-              </div>
-            </div>
-            <div class="contentBx mb-4">
-              <div class="label fw-bold">Clear Coat Application</div>
-              <div class="content">
-                <p>
-                  Protective clear coat application to add shine and prevent future wear.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    
-
-    <hr>
-
-    <footer class="footer">
-      <div class="container d-flex justify-content-between">
-        <div class="col-3 d-flex flex-column justify-content-between">
-          <div class="footer-logos">
-            <h2>
-              <span style="color: rgb(255, 132, 0)">MOBMEK</span> AUTO
-            </h2>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href="" class="ms-3"><i class="bi bi-facebook"></i></a>
-          </div>
-          <p id="year">&copy;  MOBMEK AUTO SERVICES. All Rights Reserved.</p>
-        </div>
-        <div class="col-3 d-flex flex-column ms-5">
-          <h3>Services</h3>
-          <a href="/services.html#servicing">Oil Changes</a>
-          <a href="/services.html#servicing">Fluid Checks & Top Ups</a>
-          <a href="/services.html#servicing">Filter Replacements</a>
-          <a href="/services.html#servicing"
-            >Battery Testing and Replacements</a
-          >
-          <a href="/services.html#servicing">General Inspections</a>
-          <a href="/services.html#repairs">Engine Diagnostics and Repair</a>
-          <a href="/services.html#repairs">Transmision Repair</a>
-          <a href="/services.html#repairs">Electrical System Repair</a>
-          <a href="/services.html#repairs">Suspension and Steering Repair</a>
-          <a href="/services.html#repairs">Exhaust System Repair</a>
-          <a href="/services.html#repairs">Cooling System Repair</a>
-          <a href="/services.html#brakes">Brake Inspection</a>
-          <a href="/services.html#brakes">Brake Pad Replacement</a>
-          <a href="/services.html#brakes">Rotor Resurfacing and Replacement</a>
-          <a href="/services.html#brakes">Brake Fluid Services</a>
-          <a href="/services.html#brakes">Brake Caliper Services</a>
-          <a href="/services.html#brakes">ABS Diagnostics and Repairs</a>
-          <a href="/services.html#paint">Paint Matching and Refinishing</a>
-          <a href="/services.html#paint">Dent and Scratch Repair</a>
-          <a href="/services.html#paint">Full Body Painting</a>
-          <a href="/services.html#paint">Bumper Repair and Painting</a>
-          <a href="/services.html#paint">Panel Replacement and Fitting</a>
-          <a href="/services.html#paint">Clear Coat Application</a>
-        </div>
-        <div class="col-3">
-          <h3>Location</h3>
-          <a href="">Auckland</a>
-        </div>
-        <div class="col-3">
-          <h3>About</h3>
-          <p href="">
-            At MOBMEK AUTO SERVICES, we believe in making automotive care accessible,
-            affordable, and convenient for everyone in New Zealand. Our team of
-            qualified mechanics is committed to prioritizing your safety and
-            satisfaction above all else.
+    <!-- ============ HERO ============ -->
+    <section class="hero hero--sub">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="eyebrow">Our Services</span>
+          <h1>Everything Your Car Needs, <span>In One Place</span></h1>
+          <p class="hero-sub">
+            A full range of automotive services delivered by expert mechanics —
+            high-quality, convenient and affordable.
           </p>
-          <a href="" class="">
-            <a id="readMore" class="footer-about-btn d-flex align-items-center">
-              Read More<i class="bi bi-chevron-double-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GENERAL REPAIRS ============ -->
+    <section class="service-block" id="repairs">
+      <div class="container service-block-grid">
+        <div class="service-block-media">
+          <img src="/Photos/Car-Repair3.jpg" alt="Professional car repair and maintenance services at MobMek Auto Services Otahuhu" loading="lazy" />
+        </div>
+        <div>
+          <span class="eyebrow">01</span>
+          <h2>General Repairs &amp; Maintenance</h2>
+          <p class="service-block-intro">
+            Reliable repair and maintenance solutions to ensure your vehicle's
+            optimal performance, carried out properly in our Otahuhu workshop.
+          </p>
+          <details class="service-item">
+            <summary>Engine Repair</summary>
+            <p>Comprehensive engine checks and repairs to keep your vehicle running smoothly.</p>
+          </details>
+          <details class="service-item">
+            <summary>Transmission Repair</summary>
+            <p>Expert diagnosis and repair of transmission issues to keep your car shifting smoothly.</p>
+          </details>
+          <details class="service-item">
+            <summary>Electrical System Repair</summary>
+            <p>Fixing issues with your car's electrical components, including starters, alternators, and wiring.</p>
+          </details>
+          <details class="service-item">
+            <summary>Suspension and Steering</summary>
+            <p>Ensuring a smooth and controlled ride by addressing any suspension or steering problems.</p>
+          </details>
+          <details class="service-item">
+            <summary>Exhaust System Repair</summary>
+            <p>Keeping your exhaust system functioning properly for a quieter and more efficient ride.</p>
+          </details>
+          <details class="service-item">
+            <summary>Cooling System Repair</summary>
+            <p>Maintaining your engine's temperature with radiator and coolant system repairs.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OIL & DIAGNOSTICS ============ -->
+    <section class="service-block section--tint" id="servicing">
+      <div class="container service-block-grid">
+        <div class="service-block-media">
+          <img src="/Photos/Car-Service3.jpg" alt="Oil change and car diagnostics service Auckland MobMek" loading="lazy" />
+        </div>
+        <div>
+          <span class="eyebrow">02</span>
+          <h2>Oil Changes &amp; Diagnostics</h2>
+          <p class="service-block-intro">
+            Reliable oil changes and precise diagnostics to maintain your
+            vehicle's smooth and dependable performance.
+          </p>
+          <details class="service-item">
+            <summary>Oil Changes</summary>
+            <p>Keep your engine running smoothly with regular oil changes.</p>
+          </details>
+          <details class="service-item">
+            <summary>Fluid Checks and Top-Ups</summary>
+            <p>All essential fluids checked and topped up to keep every system protected.</p>
+          </details>
+          <details class="service-item">
+            <summary>Filter Replacements</summary>
+            <p>Improve your car's efficiency with clean air and fuel filters.</p>
+          </details>
+          <details class="service-item">
+            <summary>Battery Testing &amp; Replacement</summary>
+            <p>Ensure your vehicle starts reliably with our battery services.</p>
+          </details>
+          <details class="service-item">
+            <summary>General Inspections</summary>
+            <p>Comprehensive checks to identify and address any potential issues.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BRAKES & SUSPENSION ============ -->
+    <section class="service-block" id="brakes">
+      <div class="container service-block-grid">
+        <div class="service-block-media">
+          <img src="/Photos/Brakes2.jpg" alt="Brake and suspension repair service Auckland Otahuhu" loading="lazy" />
+        </div>
+        <div>
+          <span class="eyebrow">03</span>
+          <h2>Brake &amp; Suspension Service</h2>
+          <p class="service-block-intro">
+            Expert brake and suspension services to enhance safety, improve
+            handling, and ensure a smooth, reliable ride.
+          </p>
+          <details class="service-item">
+            <summary>Brake Inspections</summary>
+            <p>Thorough checks to assess the condition of your brake pads, rotors, and fluid.</p>
+          </details>
+          <details class="service-item">
+            <summary>Brake Pad Replacements</summary>
+            <p>High-quality brake pad replacements for effective and reliable braking.</p>
+          </details>
+          <details class="service-item">
+            <summary>Rotor Replacement</summary>
+            <p>Ensuring smooth and efficient braking by addressing worn or damaged rotors.</p>
+          </details>
+          <details class="service-item">
+            <summary>Brake Fluid Services</summary>
+            <p>Flushing and replacing brake fluid to maintain optimal braking performance.</p>
+          </details>
+          <details class="service-item">
+            <summary>Brake Caliper Services</summary>
+            <p>Inspection and servicing of calipers to ensure proper functioning and longevity.</p>
+          </details>
+          <details class="service-item">
+            <summary>ABS Diagnostics and Repairs</summary>
+            <p>Expert diagnosis and repair of Anti-lock Braking System (ABS) issues for enhanced safety.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAINT & PANEL ============ -->
+    <section class="service-block section--tint" id="paint">
+      <div class="container service-block-grid">
+        <div class="service-block-media">
+          <img src="/Photos/Tyres2.jpg" alt="Professional panel beating and car painting services MobMek Auckland" loading="lazy" />
+        </div>
+        <div>
+          <span class="eyebrow">04</span>
+          <h2>Painting &amp; Panel Beating</h2>
+          <p class="service-block-intro">
+            Professional painting and panel beating services to restore your
+            vehicle's appearance and ensure a flawless finish.
+          </p>
+          <details class="service-item">
+            <summary>Paint Matching and Refinishing</summary>
+            <p>High-quality paint matching and refinishing to restore your car's original look.</p>
+          </details>
+          <details class="service-item">
+            <summary>Dent and Scratch Repair</summary>
+            <p>Precision repair for dents and scratches to bring back the smooth finish of your vehicle.</p>
+          </details>
+          <details class="service-item">
+            <summary>Full Body Painting</summary>
+            <p>Complete repainting services to give your car a fresh, new look.</p>
+          </details>
+          <details class="service-item">
+            <summary>Bumper Repair and Painting</summary>
+            <p>Restoration and painting of bumpers to fix any damages or color mismatches.</p>
+          </details>
+          <details class="service-item">
+            <summary>Panel Replacement and Fitting</summary>
+            <p>Replacement and fitting of damaged panels for a seamless repair.</p>
+          </details>
+          <details class="service-item">
+            <summary>Clear Coat Application</summary>
+            <p>Protective clear coat application to add shine and prevent future wear.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container faq-wrap">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Common Questions</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <details class="service-item">
+          <summary>How much does a car service cost in Auckland?</summary>
+          <p>It depends on your vehicle and what it needs. We always give you a clear price before any work starts — no surprises when you pick the car up. Call us on (+64) 22 426 1587 with your rego and we'll give you an honest quote.</p>
+        </details>
+        <details class="service-item">
+          <summary>Where are you, and is there parking?</summary>
+          <p>Our workshop is at 38A Huia Road, Otahuhu, Auckland 1062 — a few minutes off the motorway and easy to reach from anywhere in South Auckland. Bring the car to us and we'll take it from there.</p>
+        </details>
+        <details class="service-item">
+          <summary>Where do your customers travel from?</summary>
+          <p>Our workshop is in Otahuhu, in the heart of South Auckland, and customers drive to us from Mangere, Papatoetoe, Manukau, Otara, Onehunga, Penrose, Mount Wellington, East Tamaki, Papakura and right across the region. We're a short hop off the motorway, so it's an easy run from most of Auckland.</p>
+        </details>
+        <details class="service-item">
+          <summary>How long will my car be in for?</summary>
+          <p>Most routine jobs — an oil change, a brake service, diagnostics — are done the same day. Bigger repairs and panel work take longer, and we'll tell you up front how long we expect to need before we start.</p>
+        </details>
+        <details class="service-item">
+          <summary>How do I book an appointment?</summary>
+          <p>The quickest way is our <a href="/book.html">online booking page</a>, where you can pick any free time from Monday to Saturday. You can also call or text us on (+64) 22 426 1587.</p>
+        </details>
+        <details class="service-item">
+          <summary>Are you open on Sundays?</summary>
+          <p>Not always — Sunday availability varies. We're open Monday to Saturday, 8:30am to 4:00pm. If you need a Sunday, get in touch and we'll let you know if we can fit you in.</p>
+        </details>
+        <details class="service-item">
+          <summary>What kinds of vehicles do you work on?</summary>
+          <p>We service and repair most makes and models of cars, vans and light commercial vehicles — Japanese, European and Australian. If you're unsure whether we cover yours, give us a call.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Not sure what your car needs?</h2>
+            <p>Give us a call — honest advice costs nothing.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="tel:+64224261587" class="btn btn-white">
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+              (+64) 22 426 1587
             </a>
-          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="/index.html" class="logo">MOBMEK <span>AUTO</span></a>
+            <p>
+              Making automotive care accessible, affordable and convenient for
+              everyone in New Zealand — with your safety and satisfaction first.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/profile.php?id=61579381310525" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 320 512" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+              </a>
+              <a href="https://www.tiktok.com/@mobmekauto" target="_blank" rel="noopener" aria-label="TikTok">
+                <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="/services.html#repairs">General Repairs</a></li>
+              <li><a href="/services.html#servicing">Oil &amp; Diagnostics</a></li>
+              <li><a href="/services.html#brakes">Brakes &amp; Suspension</a></li>
+              <li><a href="/services.html#paint">Paint &amp; Panel</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="tel:+64224261587">(+64) 22 426 1587</a></li>
+              <li><a href="https://maps.google.com/?q=38A+Huia+Road,+Otahuhu,+Auckland+1062" target="_blank" rel="noopener">38A Huia Road, Otahuhu,<br />Auckland 1062</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Opening Hours</h3>
+            <p>
+              <span class="accent">Monday &ndash; Saturday:</span> 8:30am &ndash; 4:00pm<br />
+              <span class="accent">Sunday:</span> Contact us to know schedule
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p id="year">&copy; MOBMEK AUTO SERVICES. All Rights Reserved.</p>
+          <p><a href="/about.html">About</a> &nbsp;&bull;&nbsp; <a href="/services.html">Services</a></p>
         </div>
       </div>
     </footer>
-      
-      <script src="/script.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    
+
+    <script src="/script.js" defer></script>
   </body>
 </html>
