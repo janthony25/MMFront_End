@@ -3,7 +3,7 @@
 // Talks to the workshop API's anonymous booking endpoints. Set this to wherever the API is
 // hosted — it is the only thing that needs changing when the backend moves off localhost.
 // Local Docker stack: http://localhost:8080/api
-const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = 'https://workshop.mobmekauto.co.nz/api';
 
 const el = {
     booking: document.getElementById('booking'),
